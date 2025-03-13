@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooking</title>
+    <link rel="stylesheet" href="SecoundPage.css">
+    <link rel="icon" href="e.png" type="image/png">
+
+</head>
+<body>
+    <nav class="header_part">
+        <ul class="nav_links_headBar">
+              <li class="dropDown1"> <a href="#top" onclick="home()" >Home</a>
+                <div class="DropDownContent_head1">
+                    <a href="#NowShowingFilms" onclick="home()">Movies</a>
+                    <a href="#concerts" onclick="home()">Concerts</a>
+                    <a href="#Conferences" onclick="home()">Conferences</a>
+                    <a href="#Conferences" onclick="pastEvent()">Past Events</a>
+                </div>  
+              </li>
+             <li  class="dropDown1"><a href="#news" onclick="news()" >News</a></li>       
+             <li class="dropDown1"><a href="#discount" >Discounts</a>
+                <div class="DropDownContent_head1">
+                    <a href="#"  onclick="DiscountMovies()" >Movies</a>
+                    <a href="#"  onclick="DiscountConcerts()" >Concerts</a>
+                </div> 
+            </li>
+            <li class="dropDown1"><a href="#Accounts" onclick="signIn()">Sign up</a></li>
+           </ul>
+           <input type="search" name="Search" placeholder="Search..." id="Input" class="input1">
+           <label for="Input"><a href="#"><img src="searchicon.png" alt="searchicon"></a></label>
+
+           <div class="profile"><a href="#" onclick="profile()"><img src="profile.jpg" alt="profileImage" > </a> </div>
+        
+     </nav>
+     <div class="side_bar" >
+        <div  class="logo"><a href="#top" onclick="home()"><img src="eBooking3.png" alt="logo"></a> </div>
+
+        <ul class="nav_links_side">
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Watch Now</a></li>
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Coming Up</a></li>
+           <li><a href="#" class="concerts" onclick="home()">Concerts</a></li>
+           <li><a href="#" class="Conferences" onclick="home()">Conferences</a></li>
+        </ul>
+</div>
+
+
+
+ <div class="LeftSide">
+    <h2>Choose a slot</h2>
+    <div class="choices" >
+            <p>Select Date - January 2025</p> 
+
+        <div class="date" >
+            <button class="DateButton" data-value="January 01, 2025" ><span>MON 1</span></button>
+            <button class="DateButton" data-value="January 02, 2025"><span>TUE 2</span></button>
+            <button class="DateButton" data-value="January 03, 2025"><span>WED 3</span></button>
+            <button class="DateButton" data-value="January 04, 2025"><span>THU 4</span></button>
+            <button class="DateButton" data-value="January 05, 2025"><span>FRI 5</span></button>
+        </div>
+        <p>Choose Time</p>
+        <div class="time"  >
+            <button class="TimeButton" data-value="10:00 am - 12:00 pm"><span>10-12 am</span></button>
+            <button class="TimeButton" data-value="12:00 pm - 14:00 pm"><span>12-2 pm</span></button>
+            <button class="TimeButton" data-value="15:00 pm - 17:00 pm"><span>3-5 pm</span></button>
+            <button class="TimeButton" data-value="18:00 pm - 20:00 pm"><span>6-8 pm</span></button>
+            <button class="TimeButton" data-value="22:00 pm - 12:00 am"><span>10-12 pm</span></button>
+        </div>
+        <div class="sections">
+            <label for="theater" id="theaterr"><span>Select Theater </span>:</label>
+            <select name="theaterName" id="theater" required >
+                <option value="" disabled selected>Select a theater</option>
+                <option value="IMAX - Cinema"> IMAX - Cinema </option>
+                <option value="PVR -Cinema"> PVR -Cinema </option>
+                <option value="SCOPE -Cinema"> SCOPE -Cinema </option>
+                <option value="SAVOY - Cinema "> SAVOY - Cinema </option>
+            </select>
+            <div class="errorMessage" id="theaterError"></div>
+        </div>
+        <div class="sections"><br>
+            <label for="TicketCount" id="CountOfpeople"><span>Count</span>:</label>
+            <input id="TicketCount" type="number" value="5"  min="1" max="75" disabled> 
+            <div class="errorMessage" id="countError"></div>
+
+        </div>
+        <div class="sections"><br>
+            <label for="ContactNumber" id="mobile"  ><span>Mobile Number </span>  :</label>
+            <input type="tel" id="ContactNumber"  placeholder="07X-XXXXXXX"  maxlength="10" >
+            <div class="errorMessage" id="mobileError"></div>
+
+
+        </div> 
+    </div>
+    <div class="successFullMessage" id="successMessage"></div>
+
+
+</div>
+<button class="ConfirmButton" id="ConfirmButton" onclick="checkValidation()">Confirm</button>
+
+ 
+<div class="RightSide">
+    
+      <div> 
+        <h2>Booking details</h2>
+        <p id="FilledTite"><span>Title</span>: <span id="displayTitle">None</span></p>
+        <p id="FilledDate"><span>Date</span>: None</p>
+        <p id="FilledTime"> <span>Time</span>: None</p>
+        <p id="FilledTeater"><span>Theater</span>: None</p>
+        <p id="FilledCount"><span>Count</span>: None</p>
+        <p id="FilledMobile"><span>Mobile Number</span>: None</p>
+        <p id="FilledPrice"><span>Total Cost</span>: 5,000.00</p>
+        <button onclick="showAndRefresh()">Proceed to pay</button>
+    </div>  
+</div>
+
+
+
+
+
+
+<br><br><br><br><br><br><br>
+
+<footer>
+    <br><div class="firstRow1" ><span><a href="#" onclick="feedback()">ABOUT US</a></span></div>
+    <div class="firstRow2" ><span><a href="#" onclick="contactUs()">CONTACT US</a></span> </div>
+         <div class="firstRow3" ><span><a href="#" onclick="feedback()">FEEDBACK</a></span></div> 
+              <br><br> 
+    
+<div class="socialIcon"><a href="https://Facebook.com/" target="_blank">
+    <img src="fb.png" alt="fb"></a><a href="https://Gmail.com/" target="_blank">
+        <img src="mail.jpeg" alt="mail"></a><a href="https://web.whatsapp.com/" target="_blank">
+            <img src="whatsapp.png" alt="whatsapp"></a><a  href="https://YouTube.com/" target="_blank"><img src="youtube.png" alt="youtube"></a></div><br>
+
+
+    <span class="firstRow4">Copyright @ 2025 eBooking All Rights Reserved</span>
+</footer>
+    <script src="filmBookingDiscount.js"></script>
+</body>
+</html>
