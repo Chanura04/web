@@ -1,20 +1,20 @@
 function film13(){
-    window.location.href="mad.html"
+    window.location.href="madDiscount.html"
 }
 function film9(){
-    window.location.href="carol.html"
+    window.location.href="caroldiscount.html"
 }
 function film2(){
-    window.location.href="lilo.html"
+    window.location.href="liloDiscount.html"
 }
 function film1(){
-    window.location.href="mufasa.html"
+    window.location.href="mufasaDiscount.html"
 }
 function film6(){
-    window.location.href="close.html"
+    window.location.href="closeDiscount.html"
 }
 function film4(){
-    window.location.href="snow.html"
+    window.location.href="snowDiscount.html"
 }
 
 function news(){
