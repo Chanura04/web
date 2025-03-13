@@ -1,4 +1,5 @@
 
+
 function showAndRefresh(){
     const ticket=document.getElementById('ticket').value;
     const email=document.getElementById('email').value.trim();
@@ -19,11 +20,11 @@ function showAndRefresh(){
    
 
    
-    if(ticket===''){
+    if(ticket==='None'){
         document.getElementById('ticketError').textContent='Ticket Count is required!';
         check_isValid=false;
     }
-    if(email===''){
+    if(email==='None'){
         document.getElementById('EmailError').textContent='Email is required!';
         check_isValid=false;
     }else if(!CheckEmailValidation(email)){
@@ -32,7 +33,7 @@ function showAndRefresh(){
 
     }
     
-    if(mobile===''){
+    if(mobile==='None'){
         document.getElementById('MobileError').textContent='Phone number is required!';
         check_isValid=false;
     }else if(!CountOfNumberMobile(mobile)){
@@ -77,10 +78,10 @@ document.getElementById('ConfirmButton'),addEventListener('click',function(){
     const phoneNUMBER = parseInt(mobile);
     const totalPrice=parseFloat(selectedCount) *2000;
 
-    document.getElementById('givenCount').textContent= `Tickets Count: ${selectedCount}` ;
-    document.getElementById('givenEmail').textContent=`Email: ${selectedEmail}` ;
-    document.getElementById('givenMobile').textContent=`Mobile Number: ${phoneNUMBER}` ;
-    document.getElementById('FinalPrice').textContent=`Total Cost: ${totalPrice.toFixed(2)}`;
+    document.getElementById('givenCount').textContent= `Tickets Count---: ${selectedCount}` ;
+    document.getElementById('givenEmail').textContent=`Email---------------: ${selectedEmail}` ;
+    document.getElementById('givenMobile').textContent=`Mobile Number--: ${phoneNUMBER}` ;
+    document.getElementById('FinalPrice').textContent=`Total Cost---------: ${totalPrice.toFixed(2)}`;
 
 
 
