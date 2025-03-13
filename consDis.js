@@ -1,7 +1,7 @@
 
 function confTitle(Title){
     localStorage.setItem('FilmName',Title);
-    window.location.href='conBooking.html';
+    window.location.href='consBooking.html';
 }
 function news(){
     window.location.href="news.html"
