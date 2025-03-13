@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooking</title>
+    <link rel="stylesheet" href="filterConferences.css">
+    <link rel="icon" href="e.png" type="image/png">
+</head>
+<body>
+    <nav class="header_part">
+        <ul class="nav_links_headBar">
+              <li class="dropDown1"> <a href="#top" onclick="home()" >Home</a>
+                <div class="DropDownContent_head1">
+                    <a href="#NowShowingFilms" onclick="home()">Movies</a>
+                    <a href="#concerts" onclick="home()">Concerts</a>
+                    <a href="#Conferences" onclick="home()">Conferences</a>
+                    <a href="#Conferences" onclick="pastEvent()">Past Events</a>
+                </div>  
+              </li>
+             <li  class="dropDown1"><a href="#news" onclick="news()" >News</a></li>       
+             <li class="dropDown1"><a href="#discount" >Discounts</a>
+                <div class="DropDownContent_head1">
+                    <a href="#"  onclick="DiscountMovies()" >Movies</a>
+                    <a href="#"  onclick="DiscountConcerts()" >Concerts</a>
+                </div> 
+            </li>
+            <li class="dropDown1"><a href="#Accounts" onclick="signIn()">Sign up</a></li>
+           </ul>
+           <input type="search" name="Search" placeholder="Search..." id="Input" class="input1">
+           <label for="Input"><a href="#"><img src="searchicon.png" alt="searchicon"></a></label>
+
+           <div class="profile"><a href="#" onclick="profile()"><img src="profile.jpg" alt="profileImage" > </a> </div>
+        
+     </nav>
+     <div class="side_bar" >
+        <div  class="logo"><a href="#top" onclick="home()"><img src="eBooking3.png" alt="logo"></a> </div>
+
+        <ul class="nav_links_side">
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Watch Now</a></li>
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Coming Up</a></li>
+           <li><a href="#" class="concerts" onclick="home()">Concerts</a></li>
+           <li><a href="#" class="Conferences" onclick="home()">Conferences</a></li>
+        </ul>
+</div>
+
+
+
+<div class="LeftSide">
+     <div id="filterSection1">
+        <p class="p1">Find Concference Hall</p><br>
+        <div class="filterControl">
+            <select name="cinemas" id="selectLocation"  class="selectLocation">
+                <option value="LOCATION" selected disabled>LOCATION</option>
+                <option value="Colombo 01 - Colombo 03 " >Colombo 01 - Colombo 03 </option>
+                <option value="Colombo 04 - Colombo 07 ">Colombo 04 - Colombo 07  </option>
+                <option value="Colombo 08- Colombo 11 ">Colombo 08- Colombo 11 </option>
+                <option value="Colombo 11 - Colombo 12">Colombo 11 - Colombo 12 </option>
+            </select>
+            <select name="space" id="selectSpace" class="selectSpace"  >
+                <option value="SPACE" selected disabled>SPACE</option>
+                <option value="07 - 17 ">07 - 17 </option>
+                <option value="18 - 28">18 - 28 </option>
+                <option value="29 - 39">29 - 39</option>
+                <option value="40 - 50">40 - 50</option>
+            </select>
+            
+            <button id="filterButton" onclick="ConferencesFilerSection()">Search</button>
+        </div>
+     </div>
+     <br><br><br>
+
+
+
+
+     <div id="Conferences">
+        <div class="rowimages4"> 
+            <div class="FilmImg4" location="Colombo 08- Colombo 11" space="29 - 39">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf2.jpg" alt="img46"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 30</span><br>      
+                         </div>   
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 1</span><br><br>
+                            <span>Area : 310 sq.m</span><br><br>
+                            <span>Location : Colombo 08</span><br><br>
+                            <span>Call : 077-0204157</span><br><br>
+    
+                        </p>
+                        <button onclick="conf1()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4"  location="Colombo 04 - Colombo 07 " space="29 - 39">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf3.jpg" alt="img47"> 
+                        <div class="imgName4"> 
+                            <span> 🙍‍♂️ Space : 30  </span><br>      
+    
+                        </div>  
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 2</span><br><br>
+                            <span>Area : 250 sq.m</span><br><br>
+                            <span>Location : Colombo 07</span><br><br>
+                            <span>Call : 077-0207757</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf2()">Request</button>
+    
+                     </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4" location="Colombo 04 - Colombo 07 " space="29 - 39">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf6.jpeg" alt="img48"> 
+                        <div class="imgName4">
+                            <span> 🙍‍♂️ Space : 25  </span><br>      
+    
+                        </div>
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 3</span><br><br>
+                            <span>Area : 275 sq.m </span><br><br>
+                            <span>Location : Colombo 04</span><br><br>
+                            <span>Call : 077-0207797</span><br><br>
+    
+    
+    
+                        </p>
+                        <button onclick="conf3()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4" location="Colombo 01 - Colombo 03 " space="18 - 28 ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf20.jpg" alt="img49"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 28</span><br>      
+    
+                        </div> 
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 4</span><br><br>
+                            <span>Area : 475 sq.m </span><br><br>
+                            <span>Location : Colombo 01</span><br><br>
+                            <span>Call : 077-0217757</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf4()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4"  location="Colombo 11 - Colombo 12 " space="18 - 28 ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf8.jpg" alt="img50"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 22</span><br>      
+    
+                        </div> 
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 5</span><br><br>
+                            <span>Area : 275 sq.m </span><br><br>
+                            <span>Location : Colombo 12</span><br><br>
+                            <span>Call : 077-0297757</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf5()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4" location="Colombo 11 - Colombo 12 " space="07 - 27 ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf9.jpg" alt="img51"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 7</span><br>      
+    
+                        </div> 
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 6 </span><br><br>
+                            <span>Area : 75 sq.m  </span><br><br>
+                            <span>Location : Colombo 11</span><br><br>
+                            <span>Call : 077-7207757</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf6()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4" location="Colombo 11 - Colombo 12 " space="47 - 50 ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf10.jpg" alt="img52"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 47</span><br>      
+    
+                        </div> 
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 7 </span><br><br>
+                            <span>Area : 475 sq.m </span><br><br>
+                            <span>Location : Colombo 10</span><br><br>
+                            <span>Call : 077-0207727</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf7()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4"  location="Colombo 08 - Colombo 11 " space="18 - 28 ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf11.jpg" alt="img53"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 24</span><br>      
+    
+                        </div>
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 8 </span><br><br>
+                            <span>Area : 275 sq.m </span><br><br>
+                            <span>Location : Colombo 09</span><br><br>
+                            <span>Call : 077-0207757</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf8()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4" location="Colombo 08 - Colombo 11 " space="29 - 39 ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf12.jpg" alt="img54"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 34</span><br>      
+    
+                        </div>
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 9 </span><br><br>
+                            <span>Area : 275 sq.m</span><br><br>
+                            <span>Location : Colombo 08</span><br><br>
+                            <span>Call : 077-0207745</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf9()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4" location="Colombo 04 - Colombo 07  " space="07 - 17 ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf13.jpg" alt="img55"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 15</span><br>      
+    
+                        </div>
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 10 </span><br><br>
+                            <span>Area : 175 sq.m</span><br><br>
+                            <span>Location : Colombo 07</span><br><br>
+                            <span>Call : 077-0207657</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf10()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4"  location="Colombo 04 - Colombo 07  " space="07 - 17 ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf14.jpg" alt="img56"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 10</span><br>      
+    
+                        </div>  
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 11 </span><br><br>
+                            <span>Area : 175 sq.m</span><br><br>
+                            <span>Location : Colombo 06</span><br><br>
+                            <span>Call : 077-0204157</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf11()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4"  location="Colombo 04 - Colombo 07  " space="40 - 50">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf15.jpg" alt="img57"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 50</span>      
+    
+                        </div> 
+                    </div>
+                    <br><div class="back4">
+                        <p><span>Room 12 </span><br><br>
+                            <span>Area : 475 sq.m</span><br><br>
+                            <span>Location : Colombo 05</span><br><br>
+                            <span>Call : 077-0207757</span><br><br>
+                        </p>
+                        <button onclick="conf12()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            
+            <div class="FilmImg4"  location="Colombo 04 - Colombo 07  " space="29 - 39 ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf16.jpg" alt="img58"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 35</span><br>      
+    
+                        </div>  
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 13</span><br><br>
+                            <span>Area : 475 sq.m</span><br><br>
+                            <span>Location : Colombo 04</span><br><br>
+                            <span>Call : 077-0207497</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf13()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4" location="Colombo 01 - Colombo 03 " space="18 - 28  ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf17.jpg" alt="img59"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 20</span><br>      
+    
+                        </div>  
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 14</span><br><br>
+                            <span>Area : 175 sq.m</span><br><br>
+                            <span>Location : Colombo 03</span><br><br>
+                            <span>Call : 077-0265757</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf14()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4" location="Colombo 01 - Colombo 03 " space="07 - 17  ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf18.jpg" alt="img60"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 15</span><br>      
+                        </div>  
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 15</span><br><br>
+                            <span>Area : 155 sq.m</span><br><br>
+                            <span>Location : Colombo 02</span><br><br>
+                            <span>Call : 077-0201157</span><br><br>
+    
+    
+                        </p>
+                        <button onclick="conf15()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg4" location="Colombo 01 - Colombo 03 " space="07 - 17  ">
+                <div class="card_inner4">
+                    <div class="front4">
+                        <img src="conf19.jpg" alt="img61"> 
+                        <div class="imgName4">
+                            <span>🙍‍♂️ Space : 12</span><br>      
+                        </div>  
+                    </div>
+                    <div class="back4">
+                        <p><span>Room 16 </span><br><br>
+                            <span>Area : 155 sq.m</span><br><br>
+                            <span>Location : Colombo 01</span><br><br>
+                            <span>Call : 077-0207697</span><br><br>
+    
+                        </p>
+                        <button onclick="conf16()">Request</button>
+                    </div>                               
+                 </div>    
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+<footer>
+    <br><div class="firstRow1" ><span><a href="#" onclick="feedback()">ABOUT US</a></span></div>
+    <div class="firstRow2" ><span><a href="#" onclick="contactUs()">CONTACT US</a></span> </div>
+         <div class="firstRow3" ><span><a href="#" onclick="feedback()">FEEDBACK</a></span></div> 
+              <br><br> 
+    
+<div class="socialIcon"><a href="https://Facebook.com/" target="_blank">
+    <img src="fb.png" alt="fb"></a><a href="https://Gmail.com/" target="_blank">
+        <img src="mail.jpeg" alt="mail"></a><a href="https://web.whatsapp.com/" target="_blank">
+            <img src="whatsapp.png" alt="whatsapp"></a><a  href="https://YouTube.com/" target="_blank"><img src="youtube.png" alt="youtube"></a></div><br>
+
+
+    <span class="firstRow4">Copyright @ 2025 eBooking All Rights Reserved</span>
+</footer>
+        
+
+<script src="filterConferences.js"></script>
+</body>
+</html>

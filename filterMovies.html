@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooking</title>
+    <link rel="stylesheet" href="filterMovie.css">
+    <link rel="icon" href="e.png" type="image/png">
+</head>
+<body>
+    <nav class="header_part">
+        <ul class="nav_links_headBar">
+              <li class="dropDown1"> <a href="#top" onclick="home()" >Home</a>
+                <div class="DropDownContent_head1">
+                    <a href="#NowShowingFilms" onclick="home()">Movies</a>
+                    <a href="#concerts" onclick="home()">Concerts</a>
+                    <a href="#Conferences" onclick="home()">Conferences</a>
+                    <a href="#Conferences" onclick="pastEvent()">Past Events</a>
+                </div>  
+              </li>
+             <li  class="dropDown1"><a href="#news" onclick="news()" >News</a></li>       
+             <li class="dropDown1"><a href="#discount" >Discounts</a>
+                <div class="DropDownContent_head1">
+                    <a href="#"  onclick="DiscountMovies()" >Movies</a>
+                    <a href="#"  onclick="DiscountConcerts()" >Concerts</a>
+                </div> 
+            </li>
+            <li class="dropDown1"><a href="#Accounts" onclick="signIn()">Sign up</a></li>
+           </ul>
+           <input type="search" name="Search" placeholder="Search..." id="Input" class="input1">
+           <label for="Input"><a href="#"><img src="searchicon.png" alt="searchicon"></a></label>
+
+           <div class="profile"><a href="#" onclick="profile()"><img src="profile.jpg" alt="profileImage" > </a> </div>
+        
+     </nav>
+     <div class="side_bar" >
+        <div  class="logo"><a href="#top" onclick="home()"><img src="eBooking3.png" alt="logo"></a> </div>
+
+        <ul class="nav_links_side">
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Watch Now</a></li>
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Coming Up</a></li>
+           <li><a href="#" class="concerts" onclick="home()">Concerts</a></li>
+           <li><a href="#" class="Conferences" onclick="home()">Conferences</a></li>
+        </ul>
+</div>
+
+
+
+<div class="LeftSide">
+     <div id="filterSection1">
+        <p class="p1">Find Movies</p><br>
+        <div class="filterControl">
+            <select name="cinemas" id="selectLocation">
+                <option value="CINEMA HALL" selected disabled>CINEMA HALL</option>
+                <option value="Pvr" >PVR</option>
+                <option value="imax">IMAX</option>
+                <option value="scope">SCOPE</option>
+                <option value="savoy">SAVOY</option>
+            </select>
+            <label for="concertDate"><span class="date">💨</span></label>
+            <input type="date" id="concertDate" value="2025-01-01"><span class="date">💨</span>
+            <button id="filterButton" onclick="filmFilerSection()">Search</button>
+        </div>
+<br><br><br>
+     </div>
+
+<div id="NowShowingFilms">
+        <div class="rowimages"> 
+            <div class="FilmImg" LocationData="pvr" DateData="2025-01-01" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film18.jpeg" alt="img1"> 
+                        <div class="imgName" id="imgName"><span class="mufasaSpan">Mufasa</span> <br></div><div class="stars"><span class="span2"> ★★  </span> </div>   
+                    </div>
+                    <div class="back">
+                        <p><span>#Animation</span><br>
+                            <span>Duration :</span> 2h 5m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button id="filmBoookingPage" onclick="film1()" >View more</button>  
+                    </div>                               
+                </div>    
+            </div>
+            <div class="FilmImg" LocationData="pvr" DateData="2025-01-01" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film2.jpeg" alt="img2"> 
+                        <div class="imgName"> <span class="span3">Lilo & Stitch</span> <br> </div><div class="stars"><span class="span311"> ★★★★  </span></div>   
+                    </div>
+                    <div class="back">
+                        <p><span>#Action</span><br>
+                            <span>Duration :</span> 1h 30m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage"  onclick="film2()">View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="pvr" DateData="2025-01-02" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film3.jpeg" alt="img3"> 
+                        <div class="imgName"><span class="oneone">Wild Robot</span><br></div><div class="stars"><span class="span1">★★★  </span></div> 
+                    </div>
+                    <div class="back">
+                        <p><span>#Animation</span><br>
+                            <span>Duration :</span> 1h 45m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film3()">View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="imax" DateData="2025-01-02" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film4.jpeg" alt="img4"> 
+                        <div class="imgName"><span class="span4">Snow White</span>  <br> </div> <div class="stars"> <span class="span5">★★★ </span> </div> 
+                    </div>
+                    <div class="back">
+                        <p><span>#Animation</span><br>
+                            <span>Duration :</span> 2h 5m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film4()">View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="imax" DateData="2025-01-03" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film13.jpg" alt="img5"> 
+                        <div class="imgName"><span class="span7">Megan </span> <br> </div> <div class="stars"><span class="span6">★★★ </span></div> 
+                    </div>
+                    <div class="back">
+                        <p><span>#Action</span><br>
+                            <span>Duration :</span> 2h 35m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film5()" >View more</button>  
+    
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="imax" DateData="2025-01-03" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film6.jpg" alt="img6"> 
+                        <div class="imgName"><span class="span8">Close  </span><br>  </div> <div class="stars"><span class="twotwo">★★★★</span> </div> 
+                    </div>
+                    <div class="back">
+                        <p><span>#Comedy</span><br>
+                        <p><span>#Drama</span><br>
+                            <span>Duration :</span> 1h 45m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film6()">View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="scope" DateData="2025-01-04" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film7.jpeg" alt="img7"> 
+                        <div class="imgName"><span class="span9">DeadPool </span> <br>  </div><div class="stars"><span class="span14">★★★★ </span></div> 
+                    </div>
+                    <div class="back">
+                        <p><span>#Horror</span><br>
+                        <p><span>#Action</span><br>
+                            <span>Duration :</span> 2h <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film7()" >View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="scope" DateData="2025-01-01" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film8.jpeg" alt="img8"> 
+                        <div class="imgName"><span class="span10">Frozen </span> <br> </div> <div class="stars"><span class="span11">★★★ </span></div> 
+                    </div>
+                    <div class="back">
+                        <p><span>#Animation</span><br>
+                        <p><span>#Drama</span><br>
+                            <span>Duration :</span> 1h 42m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film8()">View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="scope" DateData="2025-01-05" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film9.jpg" alt="img9"> 
+                        <div class="imgName"><span class="span12">Carol </span> <br> </div> <div class="stars"><span class="span13">★★★</span></div> 
+                    </div>
+                    <div class="back">
+                        <p><span>#Romance</span><br>
+                        <p><span>#Drama</span><br>
+                            <span>Duration :</span> 1h 58m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film9()">View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="savoy" DateData="2025-01-05" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film10.jpeg" alt="img10"> 
+                        <div class="imgName">Interstellar  <br>  </div>  <div class="stars"><span class="span15">★★★ </span></div>
+                    </div>
+                    <div class="back">
+                        <p><span>#Adventure</span><br>
+                            <span>Duration :</span> 2h 49m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film10()">View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="savoy" DateData="2025-01-01" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film11.jpg" alt="img11"> 
+                        <div class="imgName"><span class="span16"> Taken</span> <br> </div><div class="stars"><span class="span17">★★★ </span></div>  
+                    </div>
+                    <div class="back">
+                        <p><span>#Action</span><br>
+                        <p><span>#Drama</span><br>
+                            <span>Duration :</span> 1h 33m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film11()">View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="savoy" DateData="2025-01-02" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film12.jpg" alt="img12"> 
+                        <div class="imgName">Inception  <br>  </div> <div class="stars"><span class="incep">★★★★</span> </div> 
+                    </div>
+                    <div class="back">
+                        <p><span>#Drama</span><br>
+                            <span>Duration :</span> 1h 35m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film12()" >View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            
+            <div class="FilmImg" LocationData="savoy" DateData="2025-01-03" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film15.jpg" alt="img13"> 
+                        <div class="imgName">Mad Max  <br>  </div><div class="stars"><span class="span18">★★ </span></div>  
+                    </div>
+                    <div class="back">
+                        <p><span>#Action</span><br>
+                            <span>Duration :</span> 2h 5m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film13()">View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="pvr" DateData="2025-01-02" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film16.jpeg" alt="img14"> 
+                        <div class="imgName"><span class="span19">Smile</span>  <br>  </div><div class="stars"><span class="span20">★★★ </span></div>  
+                    </div>
+                    <div class="back">
+                        <p><span>#Horror</span><br>
+                            <span>Duration :</span> 2h 5m <br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film14()" >View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg" LocationData="imax" DateData="2025-01-01" >
+                <div class="card_inner">
+                    <div class="front">
+                        <img src="film17.jpg" alt="img15"> 
+                        <div class="imgName"><span class="span21">Jaws</span><br></div><div class="stars"><span class="span22">★★★★</span> </div>  
+                    </div>
+                    <div class="back">
+                        <p><span>#Horror</span><br>
+                            <span>Duration :</span> 2h 4m<br>
+                            <span>Language :</span> English
+                        </p>
+                        <button class="filmBoookingPage" onclick="film15()" >View more</button>  
+                    </div>                               
+                 </div>    
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+<footer>
+    <br><div class="firstRow1" ><span><a href="#" onclick="feedback()">ABOUT US</a></span></div>
+    <div class="firstRow2" ><span><a href="#" onclick="contactUs()">CONTACT US</a></span> </div>
+         <div class="firstRow3" ><span><a href="#" onclick="feedback()">FEEDBACK</a></span></div> 
+              <br><br> 
+    
+<div class="socialIcon"><a href="https://Facebook.com/" target="_blank">
+    <img src="fb.png" alt="fb"></a><a href="https://Gmail.com/" target="_blank">
+        <img src="mail.jpeg" alt="mail"></a><a href="https://web.whatsapp.com/" target="_blank">
+            <img src="whatsapp.png" alt="whatsapp"></a><a  href="https://YouTube.com/" target="_blank"><img src="youtube.png" alt="youtube"></a></div><br>
+
+
+    <span class="firstRow4">Copyright @ 2025 eBooking All Rights Reserved</span>
+</footer>
+        
+
+<script src="filterMovies.js"></script>
+</body>
+</html>
