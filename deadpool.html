@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooking</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="icon" href="e.png" type="image/png">
+
+</head>
+<body>
+    <nav class="header_part">
+        <ul class="nav_links_headBar">
+              <li class="dropDown1"> <a href="#top" onclick="home()" >Home</a>
+                <div class="DropDownContent_head1">
+                    <a href="#NowShowingFilms" onclick="home()">Movies</a>
+                    <a href="#concerts" onclick="home()">Concerts</a>
+                    <a href="#Conferences" onclick="home()">Conferences</a>
+                    <a href="#Conferences" onclick="pastEvent()">Past Events</a>
+                </div>  
+              </li>
+             <li  class="dropDown1"><a href="#news" onclick="news()" >News</a></li>       
+             <li class="dropDown1"><a href="#discount" >Discounts</a>
+                <div class="DropDownContent_head1">
+                    <a href="#"  onclick="DiscountMovies()" >Movies</a>
+                    <a href="#"  onclick="DiscountConcerts()" >Concerts</a>
+                </div> 
+            </li>
+            <li class="dropDown1"><a href="#Accounts" onclick="signIn()">Sign up</a></li>
+           </ul>
+           <input type="search" name="Search" placeholder="Search..." id="Input" class="input1">
+           <label for="Input"><a href="#"><img src="searchicon.png" alt="searchicon"></a></label>
+
+           <div class="profile"><a href="#" onclick="profile()"><img src="profile.jpg" alt="profileImage" > </a> </div>
+        
+     </nav>
+     <div class="side_bar" >
+        <div  class="logo"><a href="#" onclick="home()"><img src="eBooking3.png" alt="logo"></a> </div>
+
+        <ul class="nav_links_side">
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Watch Now</a></li>
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Coming Up</a></li>
+           <li><a href="#" class="concerts" onclick="home()">Concerts</a></li>
+           <li><a href="#" class="Conferences" onclick="home()">Conferences</a></li>
+        </ul>
+</div>
+
+    <div class="content">
+        <div class="filmCard">
+            <div class="cardContain">
+                <img src="film7.jpeg" alt="film1" class="FilmPic">
+            </div>
+            <div class="content">
+                <h1 class="FilmTitle">
+                    The DeadPool
+                </h1>
+                <div class="detailRow">
+                    <span class="rate">⭐ 8.9/10 </span>
+                    <span class="gen"> Sci</span>
+                    <span class="gen"> Horror</span>
+                    <span class="gen">Action </span>
+                    <span class="timeDuration">🕒 2h</span>
+                </div>    
+                <p class="filmDescription">
+                    A wisecracking mercenary gets experimented on and becomes immortal yet hideously scarred,
+                     and sets out to track down the man who ruined his looks.
+                </p>
+                <p class="cast">Cast <span class="SpanOne">></span><span class="SpanTwo">88+</span></p><br>
+                <div class="castContainer">
+                    <div class="castMember">
+                        <img src="Ed_Skrein.jpg" alt="Billy Eichner">
+                        <div class="Actnames">Ed Skrein </div>
+                    </div>
+                    <div class="castMember">
+                        <img src="Karan_Soni.jpg" alt="Pierre">
+                        <div class="Actnames">Karan Soni</div>
+                    </div>
+                    <div class="castMember">
+                        <img src="Morena_Baccarin.jpg" alt="Kelvin Harrison">
+                        <div class="Actnames">Morena Baccarin</div>
+                    </div>
+                    <div class="castMember">
+                        <img src="Ryan_Reynolds.jpg" alt="Mads Mikkelsen">
+                        <div class="Actnames">Ryan Reynolds</div>
+                    </div>
+                    <div class="castMember">
+                        <img src="T_J_Miller.jpg" alt="Mads Mikkelsen">
+                        <div class="Actnames">T.J. Miller</div>
+                    </div>
+                </div>
+
+                <div class="bookingButton">
+                    <button id="filmBoookingPage" onclick="filmTitle('The DeadPool')" class="button_one">Book now</button>
+                </div><br>
+                <div class="techDetails">
+                    <div class="detailRowTech"  >
+                        <span>Technical detailsc</span>
+                        <span>Resolution: 4K Ultra HD</span>
+                        <span>Audio: Dolby Atmos</span>
+                        <span>Aspect Ration: 2.38.1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<br><br><br><br><br> 
+
+<footer>
+    <br><div class="firstRow1" ><span><a href="#" onclick="feedback()">ABOUT US</a></span></div>
+    <div class="firstRow2" ><span><a href="#" onclick="contactUs()">CONTACT US</a></span> </div>
+         <div class="firstRow3" ><span><a href="#" onclick="feedback()">FEEDBACK</a></span></div> 
+              <br><br> 
+    
+<div class="socialIcon"><a href="https://Facebook.com/" target="_blank">
+    <img src="fb.png" alt="fb"></a><a href="https://Gmail.com/" target="_blank">
+        <img src="mail.jpeg" alt="mail"></a><a href="https://web.whatsapp.com/" target="_blank">
+            <img src="whatsapp.png" alt="whatsapp"></a><a  href="https://YouTube.com/" target="_blank"><img src="youtube.png" alt="youtube"></a></div><br>
+
+
+    <span class="firstRow4">Copyright @ 2025 eBooking All Rights Reserved</span>
+</footer>    
+
+<script src="carol.js"></script>
+</body>
+</html>
