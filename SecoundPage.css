@@ -1,0 +1,513 @@
+*{
+    text-decoration: none;
+    margin: 0;    
+}
+body{
+    overflow-x: hidden;
+     background-color: #242f49;  
+
+}
+.header_part{
+    background: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 6px 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    margin-left: 190px;
+    top: 3px;
+    border-radius: 10px;
+    /* for navigation bar overlapping the dropdown bar issue */
+    z-index: 1000;    
+     
+    
+}
+label img{
+    width:20px;
+    border-radius: 10px;
+    margin-left: -25px;
+     margin-top: -10px;
+    background-color: white;
+    position: fixed;
+    /* position: absolute; */
+     
+ }
+
+.header_part:hover{
+    transform: scale(1.01);
+}
+
+.logo img{
+    width: 110px;
+    height: 105px;
+    transition:   2s;
+  }
+
+  .logo img:hover{
+    width: 128px;
+}    
+
+
+.nav_links_headBar li a:hover{
+    background-color: rgba(255, 215, 0, 1);
+    color: black;
+}
+ 
+
+
+.DropDownContent_head1{
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    top: 100%;
+    left: 0;
+    min-width: 100px;
+    box-shadow:   rgba(0, 0,0, 0.3);
+    
+}
+ 
+.dropDown1:hover .DropDownContent_head1{
+    display: block;
+    margin-left: 10px;
+}
+
+.DropDownContent_head1 a{
+    padding: 10px;
+    display: block;
+}
+ 
+.nav_links_headBar li{
+    position: relative;
+    padding: 10px;  
+}
+
+.nav_links_headBar li:hover{
+    transform: scale(1.11);
+
+}
+.nav_links_headBar{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    text-decoration: solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav_links_headBar a{
+    text-decoration: none;
+    padding: 10px 19px;
+    display:block;
+    color: white;
+    font-size: 15px;
+    transition: color 0.2s;
+ }
+.input1{
+    padding: 5px 5px;
+    width: 250px;
+    border-radius: 70px;
+    border: 3px solid white;
+    box-sizing: border-box;
+   background-repeat: no-repeat;
+   font-size: 16px;
+   margin-left: 115px;
+   transform: translate((-50%,50%));
+   background: transparent;
+   transition: all 0.5s;
+   box-shadow: 10px 10px 10px    rgb(0, 0, 0),10px 14px 20px  rgb(8, 8, 8);}
+
+.input1[type="search"]{
+    background-color: rgb(255, 255, 255);
+    padding-left:07px;   
+}     
+.input1::placeholder{
+    color: rgb(0, 0, 0);
+    /* background-color: white; */
+    opacity: 1;
+    transition:   180ms ease-out;
+} 
+.input1:focus::placeholder{
+    opacity: 1;
+}    
+.input1:hover{
+    box-shadow: 4px 4px 4px  rgba(255, 215, 0, 1),10px 11px 10px  rgba(255, 215, 0, 1); 
+}
+.input1:focus,  .input1:not(:placeholder-shown){
+    width: 200px;
+    box-shadow: 0 4px 4px   rgba(255, 215, 0, 1),0 10px 10px  rgba(255, 215, 0, 1); 
+
+}
+
+.profile img{
+    width:35px;
+    border-radius: 100px;
+    height: 35px;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.side_bar{
+    box-sizing: border-box;
+    position: fixed;
+    width: 110px;
+    position: fixed;
+    height: 200%;
+     background-color:#000000 ;
+    transition:   2s;
+    top: 0px;
+}
+.side_bar:hover{
+    width: 138px;
+ }  
+
+
+.nav_links_side  {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family:sans-serif ;
+    font-size: 10px;
+    text-align: center;
+    padding: 0.1px;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav_links_side a{
+    display: block;
+    padding: 19px;
+    background-color: #8c89892a;
+    display: flex;
+    margin: 71px 0.09px;
+    color: white;
+    text-decoration:wavy;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: bold;
+
+} 
+.nav_links_side a:hover{
+    background-color: rgba(255, 215, 0, 1);
+    color: black;
+    width: auto;
+    border-radius: 40px;
+    text-align: center;
+}
+
+
+.LeftSide{
+    width: 40%;
+    /* padding: 800px; */
+    height: 530px;
+    background-color: rgb(217, 220, 203);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 120px;
+    box-shadow: 5px 10px 50px black;
+
+    margin-left: 195px;
+}
+
+ 
+.LeftSide:hover{
+    transform: scale(1.03);
+    box-shadow: 0 9px 18px black;
+}
+.LeftSide button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10PX;
+    padding-bottom: 10PX;
+    margin: 15px;
+}
+
+.LeftSide h2{
+    text-align: center;
+     margin-top: -9.9px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-weight: bold;
+}
+
+.LeftSide p{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.LeftSide label{
+    font-weight: bold;
+    font-size: 20px;
+    flex-direction: column;
+    padding: 5px;
+}
+
+ .ConfirmButton{
+    margin-left: 425px;
+    margin-top: -42px;
+    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 50px;
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+      
+}
+.errorMessage{
+    color: red;
+    font-size: 17px;
+    font-weight: bold;
+}
+.successFullMessage{
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+
+
+}
+
+.ConfirmButton:hover{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.3s;
+
+}
+
+.LeftSide h2 , .RightSide h2 {
+    background-color: #deb887;
+    border-radius: 10px;
+    padding:5px;
+
+}
+
+.RightSide{
+    width: 40%;
+    height: 550px;
+    background-color:  rgb(217, 220, 203);
+    margin-left: 850px;
+    margin-top: -550px;
+    border-radius: 10px; 
+    box-shadow: 5px 10px 50px black;
+
+}
+
+.RightSide:hover{
+    transform: scale(1.03);
+    box-shadow: 0 9px 18px black;
+}
+.date button{
+    box-shadow: 0px 18px 25px rgba(0, 0,0, 0.5);
+
+}
+.date button:hover{
+    transform: scale(1.1);
+}
+.time button{
+    box-shadow: 0px 18px 25px rgba(0, 0,0, 0.5);
+}
+.time button:hover{
+    transform: scale(1.1);
+}
+.RightSide h2{
+    text-align: center;
+    padding: 5px;
+    font-family:sans-serif ;
+
+}
+.RightSide p{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    
+}
+
+
+input:hover{
+    border-color: #242f49;
+    box-shadow: 0 1 5px rgba(45, 128,185, 0.3);
+}
+.RightSide button{
+    margin-left: 220px;
+    margin-top: 23px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+     padding-left: 45px ;
+    padding-right: 45px ;
+    border-radius: 50px;
+    font-size: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold; 
+
+}
+ button:hover{
+    transform: scale(1.01);
+
+}
+  
+.RightSide button:hover{
+    background-color: #ffd700;
+    color: black;
+    transition: 0.3s;
+}
+.choices{
+    margin-top: 20px;
+}
+
+.date, .time{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.DateButton, .TimeButton{
+    padding: 5px 10px;
+    background-color: aliceblue;
+    border: 3px solid rgb(243, 200, 6);
+    cursor: pointer;
+}
+/* thhis is with js.when we slick the button this will blue */
+.ButtonSelected{
+    background-color: darkblue ;
+    color: white;
+}
+
+.sections{
+    margin-bottom: 10px;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+
+ 
+
+}
+ .firstRow1{
+    margin-right: 300px;
+    margin-bottom: -28px;
+    
+   
+}
+.firstRow2{
+    margin-right: -90px;
+    margin-top: 7px;
+    
+  
+}
+.firstRow3{
+    margin-right: -490px;
+    margin-top: -23px;
+}
+
+.firstRow4{
+    margin-left:95px;
+    color: white;
+    
+}
+
+footer span a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer img{
+    width: 40px;
+    border-radius: 500px;
+    padding: 15px;
+      
+ }
+ footer img:hover{
+    transform: scale(1.2);
+
+}
+.socialIcon{
+    margin-left: 84px;
+}
+
+
+.stars{
+    color: white;
+}
+.mufasaSpan{
+    margin-left: 9px;
+}  
+
+#FilledTite span{
+    margin-right: 127px;
+
+}
+#FilledTime span{
+    margin-right: 122px;
+ }
+#HomePageBookButton span{
+    margin-right: 68px;
+ }
+#FilledDate span{
+    margin-right: 125px;
+ }
+#FilledTeater span{
+    margin-right: 97px;
+ }
+#FilledCount span{
+    margin-right: 113px;
+ }
+#FilledMobile span{
+    margin-right: 25px;
+ }
+#FilledPrice span{
+    margin-right: 75px;
+ }
+
+#mobile  span{
+    margin-right: 49px;
+ }
+#CountOfpeople span{
+    margin-right: 135px;
+ }
+#theaterr span{
+    margin-right: 61px;
+ }
+.date span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.time span{
+    font-weight: bold;
+    font-size: 16px;
+}
+option {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sections input{
+    border-radius: 10px;
+    padding: 4px;
+    font-weight: bold;
+    width: 180px;
+}
+.sections select{
+    border-radius: 10px;
+    padding: 6px;
+    width: 189px;
+    font-weight: bold;
+}
+
+ 

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooking</title>
+    <link rel="stylesheet" href="filterConcerts.css">
+    <link rel="icon" href="e.png" type="image/png">
+</head>
+<body>
+    <nav class="header_part">
+        <ul class="nav_links_headBar">
+              <li class="dropDown1"> <a href="#top" onclick="home()" >Home</a>
+                <div class="DropDownContent_head1">
+                    <a href="#NowShowingFilms" onclick="home()">Movies</a>
+                    <a href="#concerts" onclick="home()">Concerts</a>
+                    <a href="#Conferences" onclick="home()">Conferences</a>
+                    <a href="#Conferences" onclick="pastEvent()">Past Events</a>
+                </div>  
+              </li>
+             <li  class="dropDown1"><a href="#news" onclick="news()" >News</a></li>       
+             <li class="dropDown1"><a href="#discount" >Discounts</a>
+                <div class="DropDownContent_head1">
+                    <a href="#"  onclick="DiscountMovies()" >Movies</a>
+                    <a href="#"  onclick="DiscountConcerts()" >Concerts</a>
+                </div> 
+            </li>
+            <li class="dropDown1"><a href="#Accounts" onclick="signIn()">Sign up</a></li>
+           </ul>
+           <input type="search" name="Search" placeholder="Search..." id="Input" class="input1">
+           <label for="Input"><a href="#"><img src="searchicon.png" alt="searchicon"></a></label>
+
+           <div class="profile"><a href="#" onclick="profile()"><img src="profile.jpg" alt="profileImage" > </a> </div>
+        
+     </nav>
+     <div class="side_bar" >
+        <div  class="logo"><a href="#top" onclick="home()"><img src="eBooking3.png" alt="logo"></a> </div>
+
+        <ul class="nav_links_side">
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Watch Now</a></li>
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Coming Up</a></li>
+           <li><a href="#" class="concerts" onclick="home()">Concerts</a></li>
+           <li><a href="#" class="Conferences" onclick="home()">Conferences</a></li>
+        </ul>
+</div>
+
+
+
+
+<div class="LeftSide">
+     <div id="filterSection1">
+        <p class="p1">Find Concerts</p><br>
+        <div class="filterControl">
+            <select name="cinemas" id="selectLocation"  >
+                <option value="LOCATION" selected disabled>LOCATION</option>
+                <option value="Colombo-01 " >Colombo-01 </option>
+                <option value="Colombo-02">Colombo-02 </option>
+                <option value="Colombo-03">Colombo-03 </option>
+                <option value="Colombo-04">Colombo-04 </option>
+            </select>
+             <label for="concertDate"><span class="date">💨</span></label>
+            <input type="date" id="concertDate" value="2025-02-16"><span class="date">💨</span>
+            <button id="filterButton" onclick="ConcertFilerSection()">Search</button>
+        </div>
+<br><br><br>
+     </div>
+
+
+     <div id="concerts">
+        <div class="rowimages3"> 
+            <div class="FilmImg3" location="Colombo-01" date="2025-02-16">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons1.jpg" alt="img31"> 
+                        <div class="imgName3">
+                            <span>📅 16th Feb</span><br>      
+                         </div>   
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                          <span>Location : <br> Colombo-01 </span><br><br></p>
+                          <button onclick="con1()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-01" date="2025-02-17">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons2.jpg" alt="img32"> 
+                        <div class="imgName3">
+                            <span>📅 17th Feb</span><br>      
+    
+                        </div>  
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-01 </span><br><br></p>
+                            <button onclick="con2()">Tickets</button>
+    
+                     </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-01" date="2025-02-17">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons3.jpg" alt="img33"> 
+                        <div class="imgName3">
+                            <span>📅 17th Feb</span><br>      
+    
+                        </div>
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-01 </span><br><br></p>
+                            <button onclick="con3()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-02" date="2025-02-18">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons4.jpg" alt="img34"> 
+                        <div class="imgName3">
+                            <span>📅 18th Feb</span><br>      
+    
+                        </div> 
+                    </div>
+                    <div class="back3" >
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-02 </span><br><br></p>
+                            <button onclick="con4()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-02" date="2025-02-19">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons5.jpg" alt="img35"> 
+                        <div class="imgName3">
+                            <span>📅 19th Feb</span><br>      
+    
+                        </div> 
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-02 </span><br><br></p>
+                            <button onclick="con5()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-03" date="2025-02-20">
+                <div class="card_inner3"> 
+                <div class="front3">
+                    <img src="cons6.jpg" alt="img36"> 
+                    <div class="imgName3">
+                        <span>📅 20th Feb</span><br>      
+
+                    </div> 
+                </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-03 </span><br><br></p>
+                            <button onclick="con6()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-03" date="2025-02-21">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons7.jpg" alt="img37"> 
+                        <div class="imgName3">
+                            <span>📅 21th Feb</span><br>      
+    
+                        </div> 
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-03 </span><br><br></p>
+                            <button onclick="con7()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-03" date="2025-02-22">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons8.jpg" alt="img38"> 
+                        <div class="imgName3">
+                            <span>📅 22th Feb</span><br>      
+    
+                        </div>
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-03 </span><br><br></p>
+                            <button onclick="con8()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-01" date="2025-02-23">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons9.jpg" alt="img39"> 
+                        <div class="imgName3">
+                            <span>📅 23th Feb</span><br>      
+    
+                        </div>
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-01 </span><br><br></p>
+                            <button onclick="con9()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-02" date="2025-02-25">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons10.jpg" alt="img40"> 
+                        <div class="imgName3">
+                            <span>📅 25th Feb</span><br>      
+    
+                        </div>
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-02 </span><br><br></p>
+                            <button onclick="con10()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-03" date="2025-02-26">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons11.jpg" alt="img41"> 
+                        <div class="imgName3">
+                            <span>📅 26th Feb</span><br>      
+    
+                        </div>  
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-03 </span><br><br></p>
+                            <button onclick="con11()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-04" date="2025-02-27">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons12.jpg" alt="img42"> 
+                        <div class="imgName3">
+                            <span>📅 27th Feb</span><br>      
+    
+                        </div> 
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-04 </span><br><br></p>
+                            <button onclick="con12()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            
+            <div class="FilmImg3"  location="Colombo-04" date="2025-02-28">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons13.jpg" alt="img43"> 
+                        <div class="imgName3">
+                            <span>📅 28th Feb</span><br>      
+    
+                        </div>  
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-04 </span><br><br></p>
+                            <button onclick="con13()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-01" date="2025-02-28">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons14.jpg" alt="img44"> 
+                        <div class="imgName3">
+                            <span>📅 28th Feb</span><br>      
+    
+                        </div>  
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-01 </span><br><br></p>
+                            <button onclick="con14()">Tickets</button>
+                        </div>                               
+                 </div>    
+            </div>
+            <div class="FilmImg3"  location="Colombo-01" date="2025-02-28">
+                <div class="card_inner3">
+                    <div class="front3">
+                        <img src="cons15.jpg" alt="img45"> 
+                        <div class="imgName3">
+                            <span>📅 28th Feb</span><br>      
+                        </div>  
+                    </div>
+                    <div class="back3">
+                        <p><span>7:00 p.m </span><br>
+                            <span>ONWARD</span><br><br>
+                            <span>Location : <br>Colombo-01 </span><br><br></p>
+                            <button onclick="con15()">Tickets</button>
+                        </div>                               
+                 </div>   
+                </div>     
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+<footer>
+    <br><div class="firstRow1" ><span><a href="#" onclick="feedback()">ABOUT US</a></span></div>
+    <div class="firstRow2" ><span><a href="#" onclick="contactUs()">CONTACT US</a></span> </div>
+         <div class="firstRow3" ><span><a href="#" onclick="feedback()">FEEDBACK</a></span></div> 
+              <br><br> 
+    
+<div class="socialIcon"><a href="https://Facebook.com/" target="_blank">
+    <img src="fb.png" alt="fb"></a><a href="https://Gmail.com/" target="_blank">
+        <img src="mail.jpeg" alt="mail"></a><a href="https://web.whatsapp.com/" target="_blank">
+            <img src="whatsapp.png" alt="whatsapp"></a><a  href="https://YouTube.com/" target="_blank"><img src="youtube.png" alt="youtube"></a></div><br>
+
+
+    <span class="firstRow4">Copyright @ 2025 eBooking All Rights Reserved</span>
+</footer>
+        
+
+<script src="filterConcerts.js"></script>
+</body>
+</html>
