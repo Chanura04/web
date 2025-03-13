@@ -3,7 +3,7 @@ function con2(){
 }
 
 function con3(){
-    window.location.href="con3.html"
+    window.location.href="con8.html"
 }
 
 function con4(){
