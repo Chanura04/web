@@ -35,12 +35,12 @@ document.getElementById('ConfirmButton'),addEventListener('click',function(){
     const phoneNUMBER = parseInt(mobile)
     
 
-    document.getElementById('FilledDate').textContent=selectedDate ? `Date: ${selectedDate.dataset.value}` : 'Date: None';
-    document.getElementById('FilledTime').textContent=selectedTime ? `Time:${selectedTime.dataset.value}` : 'Time: None';
-    document.getElementById('FilledTeater').textContent=`Theater:${selectedTheater}`  ;
-    document.getElementById('FilledCount').textContent= `Count: ${selectedCount}` ;
-    document.getElementById('FilledMobile').textContent=`Mobile Number: ${phoneNUMBER}` ;
-    document.getElementById('FilledPrice').textContent=`Total Cost: ${totalPrice.toFixed(2)}`;
+    document.getElementById('FilledDate').textContent=selectedDate ? `Date-------------------: ${selectedDate.dataset.value}` : 'Date: None';
+    document.getElementById('FilledTime').textContent=selectedTime ? `Time-------------------:${selectedTime.dataset.value}` : 'Time: None';
+    document.getElementById('FilledTeater').textContent=`Theater----------------:${selectedTheater}`  ;
+    document.getElementById('FilledCount').textContent= `Count------------------: ${selectedCount}` ;
+    document.getElementById('FilledMobile').textContent=`Mobile Number-----: ${phoneNUMBER}` ;
+    document.getElementById('FilledPrice').textContent=`Total Cost-------------: ${totalPrice.toFixed(2)}`;
 });
 
 
