@@ -298,3 +298,6 @@ function contactUs(){
 function feedback(){
     window.location.href="feedback.html"
 }
+function pastEvent(){
+    window.location.href="pastEvent.html"
+}
