@@ -115,21 +115,41 @@ function checkValidation(){
 
 }
 function showAndRefresh(){
+    let ProcessisValid=false;
 
-    let ProcessisValid=true;
+    const mobile=document.getElementById('ContactNumber').value.trim();
 
-    if(ProcessisValid){
+    document.getElementById('mobileError').textContent='';
+
+    let check_isValid=true;
+
+    if(mobile==='None'){
+        document.getElementById('mobileError').textContent='Phone number is required!';
+        ProcessisValid=flase;
+    }else if(!CountOfNumberMobile(mobile)){
+        document.getElementById('mobileError').textContent='Phone number must be 10 digits!';
+        ProcessisValid=flase;
+    }
+
+    if(check_isValid){
         document.getElementById('successMessage').textContent ='Successfully submitted!'
+        ProcessisValid=true
+
     }
 
 
-    alert("Payment Completed!! Refreshing!!!")
-    setTimeout(()=>{
-        location.reload();
-        window.location.href="index.html"
-
-    },5000);
+    if(ProcessisValid){
+        document.getElementById('successMessage').textContent ='Successfully submitted!'
+        alert("Payment Completed!! Refreshing!!!")
+        setTimeout(()=>{
+            location.reload();
+            window.location.href="index.html"
+    
+        },2000);
+    } 
 }
+
+
 function news(){
     window.location.href="news.html"
 }
