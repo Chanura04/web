@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooking</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" href="e.png" type="image/png">
+
+</head>
+<body>
+    <nav class="header_part">
+        <ul class="nav_links_headBar">
+              <li class="dropDown1"> <a href="#top" onclick="home()" >Home</a>
+                <div class="DropDownContent_head1">
+                    <a href="#NowShowingFilms" onclick="home()">Movies</a>
+                    <a href="#concerts" onclick="home()">Concerts</a>
+                    <a href="#Conferences" onclick="home()">Conferences</a>
+                    <a href="#Conferences" onclick="pastEvent()">Past Events</a>
+                </div>  
+              </li>
+             <li  class="dropDown1"><a href="#news" onclick="news()" >News</a></li>       
+             <li class="dropDown1"><a href="#discount" >Discounts</a>
+                <div class="DropDownContent_head1">
+                    <a href="#"  onclick="DiscountMovies()" >Movies</a>
+                    <a href="#"  onclick="DiscountConcerts()" >Concerts</a>
+                </div> 
+            </li>
+            <li class="dropDown1"><a href="#Accounts" onclick="signIn()">Sign up</a></li>
+           </ul>
+           <input type="search" name="Search" placeholder="Search..." id="Input" class="input1">
+           <label for="Input"><a href="#"><img src="searchicon.png" alt="searchicon"></a></label>
+
+           <div class="profile"><a href="#" onclick="profile()"><img src="profile.jpg" alt="profileImage" > </a> </div>
+        
+     </nav>
+     <div class="side_bar" >
+        <div  class="logo"><a href="#top" onclick="home()"><img src="eBooking3.png" alt="logo"></a> </div>
+
+        <ul class="nav_links_side">
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Watch Now</a></li>
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Coming Up</a></li>
+           <li><a href="#" class="concerts" onclick="home()">Concerts</a></li>
+           <li><a href="#" class="Conferences" onclick="home()">Conferences</a></li>
+        </ul>
+</div>
+
+
+
+<div class="container">  
+    <div class="content" id="loginContent">
+        <form id="login" class="login_form">
+            <p>Welcome to eBooking!</p>
+            <div class="form">
+                <label for="username">User Name: 💨</label>
+                <input   type="text" id="username" placeholder="Username"  >
+                <div class="errorMessage" id="userError"></div><br>
+                <label for="cardNUmber">Card Number: 💨</label>
+                <input   type="text" id="cardNUmber" placeholder="Card Number"  >
+                <div class="errorMessage" id="cardError"></div><br>
+                <label for="cardExpire">Expire Date: 💨</label>
+                <input   type="month" id="cardExpire"  >
+                <div class="errorMessage" id="dateError"></div>
+
+            </div>
+            <div class="form">
+                <label for="email">Email: 💨</label>
+                <input   type="email" id="email" placeholder="email" required>
+            </div>
+            <div class="form">
+                <label for="password">Password: 💨</label>
+                <input   type="password" id="password" placeholder="Password"  >
+                <div class="errorMessage" id="passwordError"></div><br><br>
+
+            </div>
+            <button type="submit" class="btnn" onclick="submitt()">Submit</button>
+        </form>
+    </div> 
+    <div class="profileDetails" id="profile-Details">
+        <div class="profileDetailspageTop">
+            <img src="profile.jpg" alt="profileImg" class=" profileDetailspageTopImg">
+            <div class="card1">
+            <p><span class="cardDetails">Account Name </span></p> 
+            <p class="profileName" id="profile-Name">None</p><br><br>
+        </div><br>
+
+        <div class="card2">
+            <p><span class="cardDetails">Email</span> <p class="profileEmail" id="profile-email">profile@gmail.com</p>
+        </div><br>
+           
+        <div class="card">
+            <h2 class="cardDetails" >Card Details</h2><br>
+            <p>Card Holder : <span class="profileName2" id="card-Name">None</span></p>
+            <p>Card Number: <span id="card-number">1245 3654 4892</span></p>
+            <p>Expiry Date:<span  id="card-date"> 02/2026</span></p>
+            <img src="visa.jpg" alt="visa">
+           
+        </div>
+
+        </div>
+        <button class="profileLogoutButton" onclick="logout()">Log out</button>
+ 
+    </div>
+
+   
+</div> 
+
+
+
+  
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+
+<footer>
+    <br><div class="firstRow1" ><span><a href="#" onclick="feedback()">ABOUT US</a></span></div>
+    <div class="firstRow2" ><span><a href="#" onclick="contactUs()">CONTACT US</a></span> </div>
+         <div class="firstRow3" ><span><a href="#" onclick="feedback()">FEEDBACK</a></span></div> 
+              <br><br> 
+    
+<div class="socialIcon"><a href="https://Facebook.com/" target="_blank">
+    <img src="fb.png" alt="fb"></a><a href="https://Gmail.com/" target="_blank">
+        <img src="mail.jpeg" alt="mail"></a><a href="https://web.whatsapp.com/" target="_blank">
+            <img src="whatsapp.png" alt="whatsapp"></a><a  href="https://YouTube.com/" target="_blank"><img src="youtube.png" alt="youtube"></a></div><br>
+
+
+    <span class="firstRow4">Copyright @ 2025 eBooking All Rights Reserved</span>
+</footer>  
+
+<script src="profile.js"></script> 
+</body>
+</html>
