@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="news.css">
+    <link rel="icon" href="e.png" type="image/png">
+
+</head>
+<body>
+    <nav class="header_part">
+        <ul class="nav_links_headBar">
+              <li class="dropDown1"> <a href="#top" onclick="home()" >Home</a>
+                <div class="DropDownContent_head1">
+                    <a href="#NowShowingFilms" onclick="home()">Movies</a>
+                    <a href="#concerts" onclick="home()">Concerts</a>
+                    <a href="#Conferences" onclick="home()">Conferences</a>
+                    <a href="#Conferences" onclick="pastEvent()">Past Events</a>
+                </div>  
+              </li>
+             <li  class="dropDown1"><a href="#news" onclick="news()" class="active" style="color: black;" >News</a></li>       
+             <li class="dropDown1"><a href="#discount" >Discounts</a>
+                <div class="DropDownContent_head1">
+                    <a href="#"  onclick="DiscountMovies()" >Movies</a>
+                    <a href="#"  onclick="DiscountConcerts()" >Concerts</a>
+                </div> 
+            </li>
+            <li class="dropDown1"><a href="#Accounts" onclick="signIn()">Sign up</a></li>
+           </ul>
+           <input type="search" name="Search" placeholder="Search..." id="Input" class="input1">
+           <label for="Input"><a href="#"><img src="searchicon.png" alt="searchicon"></a></label>
+
+           <div class="profile"><a href="#" onclick="profile()"><img src="profile.jpg" alt="profileImage" > </a> </div>
+        
+     </nav>
+     <div class="side_bar" >
+        <div  class="logo"><a href="#" onclick="home()"><img src="eBooking3.png" alt="logo"></a> </div>
+
+        <ul class="nav_links_side">
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Watch Now</a></li>
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Coming Up</a></li>
+           <li><a href="#" class="concerts" onclick="home()">Concerts</a></li>
+           <li><a href="#" class="Conferences" onclick="home()">Conferences</a></li>
+        </ul>
+</div>
+
+<div class="background">
+            <div class="firstAppearance" id="Appearance">
+                <div class="ft1">Alita: Battle Angel</div>
+                <img src="first.jpeg" alt="first" class="firstimg">
+                <img src="pic1.jpeg" alt="pic1" class="pic1">
+                <img src="pic2.jpeg" alt="pic2" class="pic2">
+                <img src="pic3.jpeg" alt="pic3" class="pic3">
+                <img src="pic4.jpeg" alt="pic4" class="pic4">
+                <img src="pic5.jpeg" alt="pic5" class="pic4">
+                <img src="pic6.jpeg" alt="pic6" class="pic4">
+
+               <p class="firstp1">Top cast > <span class="firstp1span">99+</span></p>  
+               <p class="firstp2">Rosa Salzar</p>  
+               <p class="firstp3">Cristoph Waltz</p>  
+               <p class="firstp4">Mahershal Ali</p>  
+               <p class="firstp5">Ed Skrein</p>  
+               <p class="firstp6">Jakie Earle</p>  
+               <p class="firstp7">Keeab Johnson</p>  
+               <p class="firstp8">Director : Robert Rodriguez</p>
+               <pre class="firstp9">Writers   : James CameronLaeta , KalogridisYukito Kishiro </pre><br><br>
+                
+          
+                <p><span class="firstp10sp">Box office :  </span></p><br>
+                <p><span class="sp1">Budjet                      </span>  <span class="sp11"> Gross US & Canada</span></p>
+                <p><span class="sp2"> $170,000,000 (estimated)   </span> <span class="sp22">$85,838,210  </span></p>  <br>                                                 
+                <p><span class="sp3">Opening weekend US & Canada </span> <span class="sp33"> Gross worldwide</span></p>                                                    
+                <p><span class="sp4">$404,980,543                </span> <span class="sp44">  $28,525,613 Feb 17,2019</span></p>                                                    
+                                                                
+            </div>
+
+       
+             <div class="firstAppearance" >
+                <div class="ft1">The Monkey</div>
+                <img src="The_Monkey.jpeg" alt="The_Monkey" class="firstimg">
+                <img src="monkey1.jpeg" alt="monkey1" class="pic1">
+                <img src="monkey2.jpeg" alt="monkey2" class="pic2">
+                <img src="monkey3.jpeg" alt="monkey3" class="pic3">
+                <img src="monkey4.jpeg" alt="monkey4" class="pic4">
+                <img src="monkey5.jpeg" alt="monkey5" class="pic4">
+                <img src="monkey6.jpeg" alt="monkey6" class="pic4">
+
+               <p class="firstp1">Top cast > <span class="firstp1span">99+</span></p>  
+               <p class="firstp2">Theo James</p>  
+               <p class="firstp3">Christian Con</p>  
+               <p class="firstp4">Elijah Wood</p>  
+               <p class="firstp5">Sarah lev</p>  
+               <p class="firstp6">Roh Cambe</p>  
+               <p class="firstp7">Tess Degenste</p>  
+               <p class="firstp8">Director : Osgood Perkins</p>
+               <pre class="firstp9">Writers   : Osgood Perkins , Stephen King </pre><br><br>
+                
+          
+                <p><span class="firstp10sp">Box office :  </span></p><br>
+                <p><span class="sp1">Budjet                      </span>  <span class="sp11"> Gross US & Canada</span></p>
+                <p><span class="sp2"> $270,000,000 (estimated)   </span> <span class="sp22">$35,838,210  </span></p>  <br>                                                 
+                <p><span class="sp3">Opening weekend US & Canada </span> <span class="sp33"> Gross worldwide</span></p>                                                    
+                <p><span class="sp4">$204,980,543                </span> <span class="sp44">  $98,525,613 Feb 17,2019</span></p>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="firstAppearance">
+            <div class="ft1">Captain America</div>
+                <img src="captainAm.jpeg" alt="captainAm" class="firstimg">
+                <img src="america1.jpeg" alt="america1" class="pic1">
+                <img src="america2.jpeg" alt="america2" class="pic2">
+                <img src="america3.jpeg" alt="america3" class="pic3">
+                <img src="america4.jpeg" alt="america4" class="pic4">
+                <img src="america5.jpeg" alt="america5" class="pic4">
+                <img src="america6.jpeg" alt="america6" class="pic4">
+
+               <p class="firstp1">Top cast > <span class="firstp1span">99+</span></p>  
+               <p class="firstp2">Antni Macki</p>  
+               <p class="firstp3">Harrison Ford</p>  
+               <p class="firstp4">Carl Lumbly</p>  
+               <p class="firstp5">Alr Boell</p>  
+               <p class="firstp6">Mark Pettit</p>  
+               <p class="firstp7">Pett Buris Hok</p>  
+               <p class="firstp8">Director : Julius Onah</p>
+               <pre class="firstp9">Writers   : Anthony Mackie , Malcolm Spellman , Dalan Musson</pre><br><br>
+                
+          
+                <p><span class="firstp10sp">Box office :  </span></p><br>
+                <p><span class="sp1">Budjet                      </span>  <span class="sp11"> Gross US & Canada</span></p>
+                <p><span class="sp2"> $270,000,000 (estimated)   </span> <span class="sp22">$95,838,210  </span></p>  <br>                                                 
+                <p><span class="sp3">Opening weekend US & Canada </span> <span class="sp33"> Gross worldwide</span></p>                                                    
+                <p><span class="sp4">$904,980,543                </span> <span class="sp44">  $98,525,613 Feb 17,2019</span></p>
+
+        </div>
+
+        <div class="firstAppearance" id="Appearance4">
+            <div class="ft1">Iron Man 2</div>
+                <img src="ironmannnn.jpg" alt="ironMan" class="firstimg">
+                <img src="iron1.jpeg" alt="iron1" class="pic1">
+                <img src="iron4.jpeg" alt="iron4" class="pic2">
+                <img src="iron3.jpeg" alt="iron3" class="pic3">
+                <img src="iron2.jpeg" alt="iron2" class="pic4">
+                <img src="pic5.jpeg" alt="pic5" class="pic4">
+                <img src="iron6.jpeg" alt="iron6" class="pic4">
+
+               <p class="firstp1">Top cast > <span class="firstp1span">99+</span></p>  
+               <p class="firstp2">Downey JR</p>  
+               <p class="firstp3">Clark Grekgge</p>  
+               <p class="firstp4">Paul Bettany</p>  
+               <p class="firstp5">Fran Tair</p>  
+               <p class="firstp6">Jakie Earle</p>  
+               <p class="firstp7">Will Lymaane</p>  
+               <p class="firstp8">Director : Jon Favreau</p>
+               <pre class="firstp9">Writers   : Mark Fergus , Hawk Ostby , Art Marcum </pre><br><br>
+                
+          
+                <p><span class="firstp10sp">Box office :  </span></p><br>
+                <p><span class="sp1">Budjet                      </span>  <span class="sp11"> Gross US & Canada</span></p>
+                <p><span class="sp2"> $370,000,000 (estimated)   </span> <span class="sp22">$55,838,210  </span></p>  <br>                                                 
+                <p><span class="sp3">Opening weekend US & Canada </span> <span class="sp33"> Gross worldwide</span></p>                                                    
+                <p><span class="sp4">$101,980,543                </span> <span class="sp44">  $28,002,613 Feb 17,2019</span></p>
+
+        </div>
+
+
+        <div class="firstAppearance" >
+            <div class="ft1">ThunderBoalt</div>
+                <img src="thunder.jpg" alt="thunder" class="firstimg">
+                <img src="america1.jpeg" alt="america1" class="pic1">
+                <img src="iron4.jpeg" alt="iron4" class="pic2">
+                <img src="monkey2.jpeg" alt="monkey2" class="pic3">
+                <img src="pic4.jpeg" alt="pic4" class="pic4">
+                <img src="monkey6.jpeg" alt="monkey6" class="pic4">
+                <img src="pic6.jpeg" alt="pic6" class="pic4">
+
+               <p class="firstp1">Top cast > <span class="firstp1span">99+</span></p>  
+               <p class="firstp2">Antni Macki</p>  
+               <p class="firstp3">Will Lymaane</p>  
+               <p class="firstp4">Mahershal Ali</p>  
+               <p class="firstp5">Ed Skrein</p>  
+               <p class="firstp6">Jakie Earle</p>  
+               <p class="firstp7">Keeab Johnson</p>  
+               <p class="firstp8">Director : Jake Schreier</p>
+               <pre class="firstp9">Writers   : kurut Bulsiek , KalogridisYukito Kishiro </pre><br><br>
+                
+          
+                <p><span class="firstp10sp">Box office :  </span></p><br>
+                <p><span class="sp1">Budjet                      </span>  <span class="sp11"> Gross US & Canada</span></p>
+                <p><span class="sp2"> $570,000,000 (estimated)   </span> <span class="sp22">$65,838,210  </span></p>  <br>                                                 
+                <p><span class="sp3">Opening weekend US & Canada </span> <span class="sp33"> Gross worldwide</span></p>                                                    
+                <p><span class="sp4">$494,980,543                </span> <span class="sp44">  $68,525,613 Feb 17,2019</span></p>
+
+        </div>
+        <div class="firstAppearance">
+            <div class="ft1">The Jailer</div>
+                <img src="jailer.jpg" alt="comp" class="firstimg">
+                <img src="monkey3.jpeg" alt="monkey" class="pic1">
+                <img src="pic2.jpeg" alt="pic2" class="pic2">
+                <img src="america3.jpeg" alt="america" class="pic3">
+                <img src="pic4.jpeg" alt="pic4" class="pic4">
+                <img src="iron2.jpeg" alt="iron3" class="pic4">
+                <img src="iron1.jpeg" alt="iron1" class="pic4">
+
+               <p class="firstp1">Top cast > <span class="firstp1span">99+</span></p>  
+               <p class="firstp2">Rosa Salzar</p>  
+               <p class="firstp3">Cristoph Waltz</p>  
+               <p class="firstp4">Mahershal Ali</p>  
+               <p class="firstp5">Ed Skrein</p>  
+               <p class="firstp6">Jakie Earle</p>  
+               <p class="firstp7">Keeab Johnson</p>  
+               <p class="firstp8">Director : Robert Rodriguez</p>
+               <pre class="firstp9">Writers   : James CameronLaeta , KalogridisYukito Kishiro </pre><br><br>
+                
+          
+                <p><span class="firstp10sp">Box office :  </span></p><br>
+                <p><span class="sp1">Budjet                      </span>  <span class="sp11"> Gross US & Canada</span></p>
+                <p><span class="sp2"> $170,000,000 (estimated)   </span> <span class="sp22">$85,838,210  </span></p>  <br>                                                 
+                <p><span class="sp3">Opening weekend US & Canada </span> <span class="sp33"> Gross worldwide</span></p>                                                    
+                <p><span class="sp4">$404,980,543                </span> <span class="sp44">  $28,525,613 Feb 17,2019</span></p>
+
+        </div>
+        <div class="firstAppearance">
+            <div class="ft1">The Dora</div>
+                <img src="dora.jpg" alt="heart" class="firstimg">
+                <img src="haert1.jpeg" alt="haert1" class="pic1">
+                <img src="heart2.jpeg" alt="heart2" class="pic2">
+                <img src="heart4.jpeg" alt="heart4" class="pic3">
+                <img src="america3.jpeg" alt="america" class="pic4">
+                <img src="monkey1.jpeg" alt="monk" class="pic4">
+                <img src="pic6.jpeg" alt="pic6" class="pic4">
+
+               <p class="firstp1">Top cast > <span class="firstp1span">79+</span></p>  
+               <p class="firstp2">Msin Godng</p>  
+               <p class="firstp3">Alexer Walker</p>  
+               <p class="firstp4">Latm gannies</p>  
+               <p class="firstp5">Kali Kope</p>  
+               <p class="firstp6">Jakie Earle</p>  
+               <p class="firstp7">Keeab Johnson</p>  
+               <p class="firstp8">Director : Josh Ruben</p>
+               <pre class="firstp9">Writers   :Philip Murphy , MIchael Kennedy </pre><br><br>
+                
+          
+                <p><span class="firstp10sp">Box office :  </span></p><br>
+                <p><span class="sp1">Budjet                      </span>  <span class="sp11"> Gross US & Canada</span></p>
+                <p><span class="sp2"> $970,000,000 (estimated)   </span> <span class="sp22">$65,838,210  </span></p>  <br>                                                 
+                <p><span class="sp3">Opening weekend US & Canada </span> <span class="sp33"> Gross worldwide</span></p>                                                    
+                <p><span class="sp4">$234,980,543                </span> <span class="sp44">  $27,525,613 Feb 17,2019</span></p>
+
+        </div>
+        <div class="firstAppearance" >
+            <div class="ft1">Emilia Perez</div>
+                <img src="emiliaaaaa.jpg" alt="emila" class="firstimg">
+                <img src="emila1.jpeg" alt="emila1" class="pic1">
+                <img src="emila2.jpeg" alt="emila2" class="pic2">
+                <img src="emila3.jpeg" alt="emila3" class="pic3">
+                <img src="emila4.jpeg" alt="emila4" class="pic4">
+                <img src="emila5.jpeg" alt="emila5" class="pic4">
+                <img src="america4.jpeg" alt="america4" class="pic4">
+
+               <p class="firstp1">Top cast > <span class="firstp1span">59+</span></p>  
+               <p class="firstp2">Zoe Saldan</p>  
+               <p class="firstp3">Selena Gomez</p>  
+               <p class="firstp4">Zndriana Paz</p>  
+               <p class="firstp5">Mark Lvir</p>  
+               <p class="firstp6">Jame Gerad</p>  
+               <p class="firstp7">Keeab Johnson</p>  
+               <p class="firstp8">Director : Robert Rodriguez</p>
+               <pre class="firstp9">Writers   : James CameronLaeta , KalogridisYukito Kishiro </pre><br><br>
+                
+          
+                <p><span class="firstp10sp">Box office :  </span></p><br>
+                <p><span class="sp1">Budjet                      </span>  <span class="sp11"> Gross US & Canada</span></p>
+                <p><span class="sp2"> $420,000,000 (estimated)   </span> <span class="sp22">$55,838,210  </span></p>  <br>                                                 
+                <p><span class="sp3">Opening weekend US & Canada </span> <span class="sp33"> Gross worldwide</span></p>                                                    
+                <p><span class="sp4">$494,980,543                </span> <span class="sp44">  $12,525,613 Feb 17,2019</span></p>
+
+        </div>
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br> 
+
+ <footer>
+    <br><div class="firstRow1" ><span><a href="#" onclick="feedback()">ABOUT US</a></span></div>
+    <div class="firstRow2" ><span><a href="#" onclick="contactUs()">CONTACT US</a></span> </div>
+         <div class="firstRow3" ><span><a href="#" onclick="feedback()">FEEDBACK</a></span></div> 
+              <br><br> 
+    
+<div class="socialIcon"><a href="https://Facebook.com/" target="_blank">
+    <img src="fb.png" alt="fb"></a><a href="https://Gmail.com/" target="_blank">
+        <img src="mail.jpeg" alt="mail"></a><a href="https://web.whatsapp.com/" target="_blank">
+            <img src="whatsapp.png" alt="whatsapp"></a><a  href="https://YouTube.com/" target="_blank"><img src="youtube.png" alt="youtube"></a></div><br>
+
+
+    <span class="firstRow4">Copyright @ 2025 eBooking All Rights Reserved</span>
+</footer>
+ 
+
+<script src="news.js"></script>
+
+</body>
+</html>
