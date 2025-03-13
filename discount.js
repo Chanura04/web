@@ -1,24 +1,24 @@
 function con2(){
-    window.location.href="con2.html"
+    window.location.href="con2Disount.html"
 }
 
 function con3(){
-    window.location.href="con8.html"
+    window.location.href="con8Discount.html"
 }
 
 function con4(){
-    window.location.href="con4.html"
+    window.location.href="con4Discount.html"
 }
 
 function con5(){
-    window.location.href="con5.html"
+    window.location.href="con5Discount.html"
 }
 
 function con6(){
-    window.location.href="con6.html"
+    window.location.href="con6Discount.html"
 }
 function con11(){
-    window.location.href="con11.html"
+    window.location.href="con11Discount.html"
 }
 
 
