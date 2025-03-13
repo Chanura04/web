@@ -57,7 +57,6 @@ label img{
 }
 .dropDown1:hover .DropDownContent_head1{
     display: block;
-    margin-left: 10px;
 }
 .DropDownContent_head1 a{
     padding: 10px;
