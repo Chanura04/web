@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooking</title>
+    <link rel="stylesheet" href="courseworkstyle.css">
+    <link rel="icon" href="e.png" type="image/png">
+    
+
+
+</head>
+<body>
+    <nav class="header_part">
+        <ul class="nav_links_headBar">
+              <li class="dropDown1"> <a href="#top" class=" active">Home</a>
+                <div class="DropDownContent_head1">
+                    <a href="#NowShowingFilms">Movies</a>
+                    <a href="#concerts">Concerts</a>
+                    <a href="#Conferences">Conferences</a>
+                    <a href="#Conferences">Past Events</a>
+                </div>  
+              </li>
+             <li  class="dropDown1"><a href="#news" onclick="news()">News</a></li>       
+             <li class="dropDown1"><a href="#discount" >Discounts</a>
+                <div class="DropDownContent_head1">
+                    <a href="#"  onclick="DiscountMovies()" >Movies</a>
+                    <a href="#"  onclick="DiscountConcerts()" >Concerts</a>
+                </div> 
+            </li>
+            <li class="dropDown1"><a href="#Accounts" onclick="signIn()">Sign up</a></li>
+           </ul>
+           <input type="search" name="Search" placeholder="Search..." id="Input">
+           <label for="Input"><a href="#"><img src="searchicon.png" alt="searchicon"></a></label>
+
+           <div class="profile"><a href="#" onclick="profile()"><img src="profile.jpg" alt="profileImage" > </a> </div>
+        
+     </nav>
+  
+     <div class="side_bar" >
+        <div  class="logo"><a href="#top"><img src="eBooking3.png" alt="logo"></a> </div>
+
+        <ul class="nav_links_side">
+            <li class="dropDown2"><a href="#NowShowingFilms" class="films">Watch Now</a></li>
+            <li class="dropDown2"><a href="#ComingUpFilms2" class="films">Coming Up</a></li>
+           <li><a href="#concerts" class="concerts">Concerts</a></li>
+           <li><a href="#Conferences" class="Conferences">Conferences</a></li>
+        </ul>
+</div>
+<div class="filterIcon"><button class="filterButton" onclick="openPanel()"><img src="filter.png" alt="filterPng" title="Filter"></button></div>
+<div class="filterArea" id="filterArea">
+    <button class="closeFilterButton" onclick="openPanel()">&times;</button>
+
+    <div class="FilterPageLink">
+        <h2>Filter events</h2>
+        <h3><a href="#" onclick="filterMovies()">🎥 Movies</a></h3>
+    </div>
+    <div class="FilterPageLink">
+        <h3><a href="#" onclick="filterConferences()">🎤 Concerts</a></h3>
+    </div>
+    <div class="FilterPageLink">
+        <h3><a href="#" onclick="filterConcerts()">🗣️ Conferences</a></h3>
+    </div>
+</div>
+<div id="top">
+    <div class="VideoSideshowing_Content" >
+          
+        <img class="images" src="one.png" alt="one" >
+        <img class="images" src="two.png" alt="two">
+        <img class="images" src="three.png" alt="three">
+        <img class="images" src="four.png" alt="four">
+        <img class="images" src="five.png" alt="five">
+        <img class="images" src="six.png" alt="six">
+        <img class="previous_slide" id="previous_slide" src="back_arrow.png" alt="backArrow">
+        <img class="next_slide" id="next_slide" src="forward_arrow.png" alt="forwardArrow">
+    </div>
+</div>
+<br> <br>
+
+<div class="head1"> Now showing...  </div>
+<br><br>
+
+<div id="NowShowingFilms">
+    <div class="rowimages"> 
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film18.jpeg" alt="img1"> 
+                    <div class="imgName" id="imgName"><span class="mufasaSpan">Mufasa</span> <br></div><div class="stars"><span class="span2"> ★★  </span> </div>   
+                </div>
+                <div class="back">
+                    <p><span>#Animation</span><br>
+                        <span>Duration :</span> 2h 5m <br>
+                        <span>Language :</span> English
+                    </p>
+                     <button id="filmBoookingPage" onclick="film1()" >View more</button>  
+                </div>                               
+            </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film2.jpeg" alt="img2"> 
+                    <div class="imgName"> <span class="span3">Lilo & Stitch</span> <br> </div><div class="stars"><span class="span311"> ★★★★  </span></div>   
+                </div>
+                <div class="back">
+                    <p><span>#Action</span><br>
+                        <span>Duration :</span> 1h 30m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage"  onclick="film2()">View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film3.jpeg" alt="img3"> 
+                    <div class="imgName"><span class="oneone">Wild Robot</span><br></div><div class="stars"><span class="span1">★★★  </span></div> 
+                </div>
+                <div class="back">
+                    <p><span>#Animation</span><br>
+                        <span>Duration :</span> 1h 45m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film3()">View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film4.jpeg" alt="img4"> 
+                    <div class="imgName"><span class="span4">Snow White</span>  <br> </div> <div class="stars"> <span class="span5">★★★ </span> </div> 
+                </div>
+                <div class="back">
+                    <p><span>#Animation</span><br>
+                        <span>Duration :</span> 2h 5m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film4()">View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film13.jpg" alt="img5"> 
+                    <div class="imgName"><span class="span7">Megan </span> <br> </div> <div class="stars"><span class="span6">★★★ </span></div> 
+                </div>
+                <div class="back">
+                    <p><span>#Action</span><br>
+                        <span>Duration :</span> 2h 35m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film5()" >View more</button>  
+
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film6.jpg" alt="img6"> 
+                    <div class="imgName"><span class="span8">Close  </span><br>  </div> <div class="stars"><span class="twotwo">★★★★</span> </div> 
+                </div>
+                <div class="back">
+                    <p><span>#Comedy</span><br>
+                    <p><span>#Drama</span><br>
+                        <span>Duration :</span> 1h 45m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film6()">View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film7.jpeg" alt="img7"> 
+                    <div class="imgName"><span class="span9">DeadPool </span> <br>  </div><div class="stars"><span class="span14">★★★★ </span></div> 
+                </div>
+                <div class="back">
+                    <p><span>#Horror</span><br>
+                    <p><span>#Action</span><br>
+                        <span>Duration :</span> 2h <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film7()" >View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film8.jpeg" alt="img8"> 
+                    <div class="imgName"><span class="span10">Frozen </span> <br> </div> <div class="stars"><span class="span11">★★★ </span></div> 
+                </div>
+                <div class="back">
+                    <p><span>#Animation</span><br>
+                    <p><span>#Drama</span><br>
+                        <span>Duration :</span> 1h 42m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film8()">View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film9.jpg" alt="img9"> 
+                    <div class="imgName"><span class="span12">Carol </span> <br> </div> <div class="stars"><span class="span13">★★★</span></div> 
+                </div>
+                <div class="back">
+                    <p><span>#Romance</span><br>
+                    <p><span>#Drama</span><br>
+                        <span>Duration :</span> 1h 58m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film9()">View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film10.jpeg" alt="img10"> 
+                    <div class="imgName">Interstellar  <br>  </div>  <div class="stars"><span class="span15">★★★ </span></div>
+                </div>
+                <div class="back">
+                    <p><span>#Adventure</span><br>
+                        <span>Duration :</span> 2h 49m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film10()">View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film11.jpg" alt="img11"> 
+                    <div class="imgName"><span class="span16"> Taken</span> <br> </div><div class="stars"><span class="span17">★★★ </span></div>  
+                </div>
+                <div class="back">
+                    <p><span>#Action</span><br>
+                    <p><span>#Drama</span><br>
+                        <span>Duration :</span> 1h 33m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film11()">View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film12.jpg" alt="img12"> 
+                    <div class="imgName">Inception  <br>  </div> <div class="stars"><span class="incep">★★★★</span> </div> 
+                </div>
+                <div class="back">
+                    <p><span>#Drama</span><br>
+                        <span>Duration :</span> 1h 35m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film12()" >View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film15.jpg" alt="img13"> 
+                    <div class="imgName">Mad Max  <br>  </div><div class="stars"><span class="span18">★★ </span></div>  
+                </div>
+                <div class="back">
+                    <p><span>#Action</span><br>
+                        <span>Duration :</span> 2h 5m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film13()">View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film16.jpeg" alt="img14"> 
+                    <div class="imgName"><span class="span19">Smile</span>  <br>  </div><div class="stars"><span class="span20">★★★ </span></div>  
+                </div>
+                <div class="back">
+                    <p><span>#Horror</span><br>
+                        <span>Duration :</span> 2h 5m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film14()" >View more</button>  
+                </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg">
+            <div class="card_inner">
+                <div class="front">
+                    <img src="film17.jpg" alt="img15"> 
+                    <div class="imgName"><span class="span21">Jaws</span><br></div><div class="stars"><span class="span22">★★★★</span> </div>  
+                </div>
+                <div class="back">
+                    <p><span>#Horror</span><br>
+                        <span>Duration :</span> 2h 4m<br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film15()" >View more</button>  
+                </div>                               
+             </div>    
+        </div>
+    </div>
+</div>
+        
+<div class="head2"> Coming up... </div>
+
+<br><br><br>
+
+<div id="ComingUpFilms2">
+    <div class="rowimages2"> 
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film19.jpeg" alt="img16"> 
+                    <div class="imgName2"><span class="amsterdam">Amsterdam</span><br></div>   
+                </div>
+                <div class="back2">
+                    <p><span>#Action</span><br>
+                        <span>Duration :</span> 2h 28m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film16()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film20.jpg" alt="img17"> 
+                    <div class="imgName2"><span class="span23">Jungle Cruise</span><br></div>  
+                </div>
+                <div class="back2">
+                    <p><span>#Action</span><br>
+                        <span>Duration :</span> 2h 16m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film17()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film21.jpg" alt="img18"> 
+                    <div class="imgName2"><span class="span24">Despicable Me 4</span><br></div>
+                </div>
+                <div class="back2">
+                    <p><span>#Animation</span><br>
+                        <span>Duration :</span> 1h 45m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film18()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film22.jpeg" alt="img19"> 
+                    <div class="imgName2">Avengers<br></div> 
+                </div>
+                <div class="back2">
+                    <p><span>#Animation</span><br>
+                        <span>Duration :</span> 2h 5m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film19()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film23.jpg" alt="img20"> 
+                    <div class="imgName2"> <span class="span25">God father</span><br></div> 
+                </div>
+                <div class="back2">
+                    <p><span>#Action</span><br>
+                        <span>Duration :</span> 2h 35m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film20()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film24.jpeg" alt="img21"> 
+                    <div class="imgName2"><span class="span26">Django</span><br></div> 
+                </div>
+                <div class="back2">
+                    <p><span>#Comedy</span><br>
+                       <span>#Drama</span><br>
+                        <span>Duration :</span> 1h 45m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film21()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film25.jpeg" alt="img22"> 
+                    <div class="imgName2"><span class="span28">Quiet Place</span><br></div> 
+                </div>
+                <div class="back2">
+                    <p><span>#Horror</span><br>
+                       <span>#Action</span><br>
+                        <span>Duration :</span> 2h <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film22()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film26.jpg" alt="img23"> 
+                    <div class="imgName2"><span class="span29">The Revenant</span><br></div>
+                </div>
+                <div class="back2">
+                    <p><span>#Animation</span><br>
+                       <span>#Drama</span><br>
+                        <span>Duration :</span> 1h 42m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film23()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film27.jpeg" alt="img24"> 
+                    <div class="imgName2"><span class="span30">The Prestige</span><br></div>
+                </div>
+                <div class="back2">
+                    <p><span>#Romance</span><br>
+                       <span>#Drama</span><br>
+                        <span>Duration :</span> 1h 58m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film24()" >View more</button>  
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film28.jpeg" alt="img25"> 
+                    <div class="imgName2"><span class="span31">Fight Club</span><br></div>
+                </div>
+                <div class="back2">
+                    <p><span>#Adventure</span><br>
+                        <span>Duration :</span> 2h 49m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film25()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film29.jpeg" alt="img26"> 
+                    <div class="imgName2"><span class="span32">Tenet</span><br></div>  
+                </div>
+                <div class="back2">
+                    <p><span>#Action</span><br>
+                       <span>#Drama</span><br>
+                        <span>Duration :</span> 1h 33m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film26()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film30.jpg" alt="img27"> 
+                    <div class="imgName2"><span class="span34">Joker</span><br></div> 
+                </div>
+                <div class="back2">
+                    <p><span>#Drama</span><br>
+                        <span>Duration :</span> 1h 35m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film27()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film31.jpg" alt="img28"> 
+                    <div class="imgName2"><span class="span35">The BatMan</span><br></div>  
+                </div>
+                <div class="back2">
+                    <p><span>#Action</span><br>
+                        <span>Duration :</span> 2h 5m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film28()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film32.jpeg" alt="img29"> 
+                    <div class="imgName2"><span class="span36">Oppenheimer</span><br></div>  
+                </div>
+                <div class="back2">
+                    <p><span>#Horror</span><br>
+                        <span>Duration :</span> 2h 5m <br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film29()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg2">
+            <div class="card_inner2">
+                <div class="front2">
+                    <img src="film33.jpeg" alt="img30"> 
+                    <div class="imgName2"><span class="span37">DeadPool 2</span><br></div>  
+                </div>
+                <div class="back2">
+                    <p><span>#Horror</span><br>
+                        <span>Duration :</span> 2h 4m<br>
+                        <span>Language :</span> English
+                    </p>
+                    <button class="filmBoookingPage" onclick="film30()" >View more</button>  
+
+                 </div>                               
+             </div>    
+        </div>
+    </div>
+</div>
+
+
+<br><br><br>
+<div class="head3"> Concerts </div>
+<br><br><br><br>
+
+<div id="concerts">
+    <div class="rowimages3"> 
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons1.jpg" alt="img31"> 
+                    <div class="imgName3">
+                        <span>📅 16th Feb</span><br>      
+                     </div>   
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con1()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons2.jpg" alt="img32"> 
+                    <div class="imgName3">
+                        <span>📅 17th Feb</span><br>      
+
+                    </div>  
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con2()">Tickets</button>
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons3.jpg" alt="img33"> 
+                    <div class="imgName3">
+                        <span>📅 17th Feb</span><br>      
+
+                    </div>
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con3()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons4.jpg" alt="img34"> 
+                    <div class="imgName3">
+                        <span>📅 18th Feb</span><br>      
+
+                    </div> 
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con4()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons5.jpg" alt="img35"> 
+                    <div class="imgName3">
+                        <span>📅 19th Feb</span><br>      
+
+                    </div> 
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con5()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons6.jpg" alt="img36"> 
+                    <div class="imgName3">
+                        <span>📅 20th Feb</span><br>      
+
+                    </div> 
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con6()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons7.jpg" alt="img37"> 
+                    <div class="imgName3">
+                        <span>📅 21th Feb</span><br>      
+
+                    </div> 
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con7()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons8.jpg" alt="img38"> 
+                    <div class="imgName3">
+                        <span>📅 22th Feb</span><br>      
+
+                    </div>
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con8()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons9.jpg" alt="img39"> 
+                    <div class="imgName3">
+                        <span>📅 23th Feb</span><br>      
+
+                    </div>
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con9()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons10.jpg" alt="img40"> 
+                    <div class="imgName3">
+                        <span>📅 25th Feb</span><br>      
+
+                    </div>
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con10()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons11.jpg" alt="img41"> 
+                    <div class="imgName3">
+                        <span>📅 26th Feb</span><br>      
+
+                    </div>  
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con11()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons12.jpg" alt="img42"> 
+                    <div class="imgName3">
+                        <span>📅 27th Feb</span><br>      
+
+                    </div> 
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con12()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons13.jpg" alt="img43"> 
+                    <div class="imgName3">
+                        <span>📅 28th Feb</span><br>      
+
+                    </div>  
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con13()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons14.jpg" alt="img44"> 
+                    <div class="imgName3">
+                        <span>📅 28th Feb</span><br>      
+
+                    </div>  
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con14()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg3">
+            <div class="card_inner3">
+                <div class="front3">
+                    <img src="cons15.jpg" alt="img45"> 
+                    <div class="imgName3">
+                        <span>📅 28th Feb</span><br>      
+                    </div>  
+                </div>
+                <div class="back3">
+                    <p><span>7:00 p.m </span><br><br>
+                        <span>ONWARD</span><br>
+                    </p>
+                    <button onclick="con15()">Tickets</button>
+                 </div>                               
+             </div>    
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<div class="head3"> Conferences </div>
+<br><br><br><br>
+
+
+<div id="Conferences">
+    <div class="rowimages4"> 
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf2.jpg" alt="img46"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 30</span><br>      
+                     </div>   
+                </div>
+                <div class="back4">
+                    <p><span>Room 1</span><br><br>
+                        <span>Area : 310 sq.m</span><br><br>
+                        <span>Location : Colombo 08</span><br><br>
+                        <span>Call : 077-0204157</span><br><br>
+
+                    </p>
+                    <button onclick="conf1()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf3.jpg" alt="img47"> 
+                    <div class="imgName4"> 
+                        <span> 🙍‍♂️ Space : 30  </span><br>      
+
+                    </div>  
+                </div>
+                <div class="back4">
+                    <p><span>Room 2</span><br><br>
+                        <span>Area : 250 sq.m</span><br><br>
+                        <span>Location : Colombo 07</span><br><br>
+                        <span>Call : 077-0207757</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf2()">Request</button>
+
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf6.jpeg" alt="img48"> 
+                    <div class="imgName4">
+                        <span> 🙍‍♂️ Space : 25  </span><br>      
+
+                    </div>
+                </div>
+                <div class="back4">
+                    <p><span>Room 3</span><br><br>
+                        <span>Area : 275 sq.m </span><br><br>
+                        <span>Location : Colombo 04</span><br><br>
+                        <span>Call : 077-0207797</span><br><br>
+
+
+
+                    </p>
+                    <button onclick="conf3()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf20.jpg" alt="img49"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 28</span><br>      
+
+                    </div> 
+                </div>
+                <div class="back4">
+                    <p><span>Room 4</span><br><br>
+                        <span>Area : 475 sq.m </span><br><br>
+                        <span>Location : Colombo 01</span><br><br>
+                        <span>Call : 077-0217757</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf4()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf8.jpg" alt="img50"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 22</span><br>      
+
+                    </div> 
+                </div>
+                <div class="back4">
+                    <p><span>Room 5</span><br><br>
+                        <span>Area : 275 sq.m </span><br><br>
+                        <span>Location : Colombo 12</span><br><br>
+                        <span>Call : 077-0297757</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf5()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf9.jpg" alt="img51"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 7</span><br>      
+
+                    </div> 
+                </div>
+                <div class="back4">
+                    <p><span>Room 6 </span><br><br>
+                        <span>Area : 75 sq.m  </span><br><br>
+                        <span>Location : Colombo 11</span><br><br>
+                        <span>Call : 077-7207757</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf6()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf10.jpg" alt="img52"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 47</span><br>      
+
+                    </div> 
+                </div>
+                <div class="back4">
+                    <p><span>Room 7 </span><br><br>
+                        <span>Area : 475 sq.m </span><br><br>
+                        <span>Location : Colombo 10</span><br><br>
+                        <span>Call : 077-0207727</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf7()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf11.jpg" alt="img53"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 24</span><br>      
+
+                    </div>
+                </div>
+                <div class="back4">
+                    <p><span>Room 8 </span><br><br>
+                        <span>Area : 275 sq.m </span><br><br>
+                        <span>Location : Colombo 09</span><br><br>
+                        <span>Call : 077-0207757</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf8()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf12.jpg" alt="img54"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 34</span><br>      
+
+                    </div>
+                </div>
+                <div class="back4">
+                    <p><span>Room 9 </span><br><br>
+                        <span>Area : 275 sq.m</span><br><br>
+                        <span>Location : Colombo 08</span><br><br>
+                        <span>Call : 077-0207745</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf9()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf13.jpg" alt="img55"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 15</span><br>      
+
+                    </div>
+                </div>
+                <div class="back4">
+                    <p><span>Room 10 </span><br><br>
+                        <span>Area : 175 sq.m</span><br><br>
+                        <span>Location : Colombo 07</span><br><br>
+                        <span>Call : 077-0207657</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf10()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf14.jpg" alt="img56"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 10</span><br>      
+
+                    </div>  
+                </div>
+                <div class="back4">
+                    <p><span>Room 11 </span><br><br>
+                        <span>Area : 175 sq.m</span><br><br>
+                        <span>Location : Colombo 06</span><br><br>
+                        <span>Call : 077-0204157</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf11()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf15.jpg" alt="img57"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 50</span>      
+
+                    </div> 
+                </div>
+                <br><div class="back4">
+                    <p><span>Room 12 </span><br><br>
+                        <span>Area : 475 sq.m</span><br><br>
+                        <span>Location : Colombo 05</span><br><br>
+                        <span>Call : 077-0207757</span><br><br>
+                    </p>
+                    <button onclick="conf12()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf16.jpg" alt="img58"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 35</span><br>      
+
+                    </div>  
+                </div>
+                <div class="back4">
+                    <p><span>Room 13</span><br><br>
+                        <span>Area : 475 sq.m</span><br><br>
+                        <span>Location : Colombo 04</span><br><br>
+                        <span>Call : 077-0207497</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf13()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf17.jpg" alt="img59"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 20</span><br>      
+
+                    </div>  
+                </div>
+                <div class="back4">
+                    <p><span>Room 14</span><br><br>
+                        <span>Area : 175 sq.m</span><br><br>
+                        <span>Location : Colombo 03</span><br><br>
+                        <span>Call : 077-0265757</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf14()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf18.jpg" alt="img60"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 15</span><br>      
+                    </div>  
+                </div>
+                <div class="back4">
+                    <p><span>Room 15</span><br><br>
+                        <span>Area : 155 sq.m</span><br><br>
+                        <span>Location : Colombo 02</span><br><br>
+                        <span>Call : 077-0201157</span><br><br>
+
+
+                    </p>
+                    <button onclick="conf15()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+        <div class="FilmImg4">
+            <div class="card_inner4">
+                <div class="front4">
+                    <img src="conf19.jpg" alt="img61"> 
+                    <div class="imgName4">
+                        <span>🙍‍♂️ Space : 12</span><br>      
+                    </div>  
+                </div>
+                <div class="back4">
+                    <p><span>Room 16 </span><br><br>
+                        <span>Area : 155 sq.m</span><br><br>
+                        <span>Location : Colombo 01</span><br><br>
+                        <span>Call : 077-0207697</span><br><br>
+
+                    </p>
+                    <button onclick="conf16()">Request</button>
+                 </div>                               
+             </div>    
+        </div>
+    </div>
+</div>
+
+
+<footer>
+
+<br><div class="firstRow1"><SPAN><a href="#" onclick="aboutUS()">ABOUT US</a></SPAN></div>
+        <div class="firstRow2"><SPAN><a href="#" onclick="contactUs()">CONTACT US</a></SPAN> </div>
+             <div class="firstRow3"><SPAN><a href="#" onclick="feedback()">FEEDBACK</a></SPAN></div> 
+                  <br><br> 
+        
+    <div class="socialIcon">
+        <a href="https://Facebook.com/" target="_blank"><img src="fb.png" alt="fb"></a>
+        <a href="https://Gmail.com/" target="_blank"><img src="mail.jpeg" alt="mail"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="whatsapp.png" alt="whatsapp"></a>
+        <a href="https://YouTube.com/" target="_blank"><img src="youtube.png" alt="youtube"></a>
+    </div><br>
+
+
+<SPAN class="firstRow4">Copyright @ 2025 eBooking All Rights Reserved</SPAN>
+</footer>
+
+
+<script src="homeScript.js"></script>
+ 
+    
+    
+      
+</body>
+</html>
