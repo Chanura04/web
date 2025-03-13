@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooking</title>
+    <link rel="stylesheet" href="DiscountMov.css">
+    <link rel="icon" href="e.png" type="image/png">
+
+</head>
+<body>
+    <nav class="header_part">
+        <ul class="nav_links_headBar">
+              <li class="dropDown1"> <a href="#top" onclick="home()" >Home</a>
+                <div class="DropDownContent_head1">
+                    <a href="#NowShowingFilms" onclick="home()">Movies</a>
+                    <a href="#concerts" onclick="home()">Concerts</a>
+                    <a href="#Conferences" onclick="home()">Conferences</a>
+                    <a href="#Conferences" onclick="pastEvent()">Past Events</a>
+                </div>  
+              </li>
+             <li  class="dropDown1"><a href="#news" onclick="news()" >News</a></li>       
+             <li class="dropDown1"><a href="#discount"  class="active" style="color: black;">Discounts</a>
+                <div class="DropDownContent_head1">
+                    <a href="#"  onclick="DiscountMovies()"  class="active" style="color: black;">Movies</a>
+                    <a href="#"  onclick="DiscountConcerts()" >Concerts</a>
+                </div> 
+            </li>
+            <li class="dropDown1"><a href="#Accounts" onclick="signIn()">Sign up</a></li>
+           </ul>
+           <input type="search" name="Search" placeholder="Search..." id="Input" class="input1">
+           <label for="Input"><a href="#"><img src="searchicon.png" alt="searchicon"></a></label>
+
+           <div class="profile"><a href="#" onclick="profile()"><img src="profile.jpg" alt="profileImage" > </a> </div>
+        
+     </nav>
+     <div class="side_bar" >
+        <div  class="logo"><a href="#top" onclick="home()"><img src="eBooking3.png" alt="logo"></a> </div>
+
+        <ul class="nav_links_side">
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Watch Now</a></li>
+            <li class="dropDown2"><a href="#" class="films" onclick="home()">Coming Up</a></li>
+           <li><a href="#" class="concerts" onclick="home()">Concerts</a></li>
+           <li><a href="#" class="Conferences" onclick="home()">Conferences</a></li>
+        </ul>
+</div>
+
+
+
+  
+<div class="background">
+        <div class="headerBack">
+            <p class="header">
+                <span class="row1">Special Discounts</span><br>
+                <span class="row2">Limited time discounts - Save Up to 50%</span>
+            </p>
+        </div>
+            <div class="discounts">   
+                <div class="card1">
+                    <div class="discountPrice"> 1 Ticket × 5 <br> Get 50% OFF</div>
+                    <img src="film4.jpeg" alt="film" class="img1">
+                    <div class="cardDetails">
+                        <p class="topic1"><span class="img1sp1">Snow White</span></p>
+                        <p class="date">📅 23rd February, 2025</p>
+                        <div class="price">
+                            <p>
+                                <span class="NormalPrice">Rs.2000</span>
+                                <span class="AfterDiscoumt">Rs.1000</span>
+                            </p>
+                        </div>
+                            <button class="BokkingButton" onclick="film4()">Book now</button>
+                    </div>
+                </div>
+               
+            </div>
+       
+            <div class="discounts2">   
+                <div class="card1">
+                    <div class="discountPrice"> 1 Ticket × 5 <br> 50% OFF</div>
+                    <img src="film5.jpg" alt="film" class="img1">
+                    <div class="cardDetails">
+                        <p class="topic1"><span class="spantop1">Close</span></p>
+                        <p class="date">📅 23rd February, 2025</p>
+                        <div class="price">
+                            <p>
+                                <span class="NormalPrice">Rs.2000</span>
+                                <span class="AfterDiscoumt">Rs.1000</span>
+                            </p>
+                        </div>
+                            <button class="BokkingButton" onclick="film6()">Book now</button>
+                    </div>
+                </div>
+            </div>    
+           <div class="discounts3">   
+                <div class="card1">
+                    <div class="discountPrice"> 1 Ticket × 5 <br> 50% OFF</div>
+                    <img src="film6.jpeg" alt="film" class="img1">
+                    <div class="cardDetails">
+                        <p class="topic1"><span class="spantop2">Mufasa</span></p>
+                        <p class="date">📅 23rd February, 2025</p>
+                        <div class="price">
+                            <p>
+                                <span class="NormalPrice">Rs.2000</span>
+                                <span class="AfterDiscoumt">Rs.1000</span>
+                            </p>
+                        </div>
+                            <button class="BokkingButton" onclick="film1()">Book now</button>
+                    </div>
+                </div>  
+            </div>    
+           <div class="discounts4">   
+                <div class="card1">
+                    <div class="discountPrice"> 1 Ticket × 5 <br> 50% OFF</div>
+                    <img src="film15.jpg" alt="film" class="img1">
+                    <div class="cardDetails">
+                        <p class="topic1" ><span class="spantop3">Mad Max</span></p>
+                        <p class="date">📅 23rd February, 2025</p>
+                        <div class="price">
+                            <p>
+                                <span class="NormalPrice">Rs.2000</span>
+                                <span class="AfterDiscoumt">Rs.1000</span>
+                            </p>
+                        </div>
+                            <button class="BokkingButton" onclick="film13()">Book now</button>
+                    </div>
+                </div>  
+            </div>    
+           <div class="discounts5">   
+                <div class="card1">
+                    <div class="discountPrice"> 1 Ticket × 5 <br> 50% OFF</div>
+                    <img src="film2.jpeg" alt="film" class="img1">
+                    <div class="cardDetails">
+                        <p class="topic1"><span  class="spantop4">Lilo & Stitch</span></p>
+                        <p class="date">📅 23rd February, 2025</p>
+                        <div class="price">
+                            <p>
+                                <span class="NormalPrice">Rs.2000</span>
+                                <span class="AfterDiscoumt">Rs.1000</span>
+                            </p>
+                        </div>
+                            <button class="BokkingButton" onclick="film2()">Book now</button>
+                    </div>
+                </div>  
+            </div>    
+            
+           <div class="discounts6">   
+                <div class="card1">
+                    <div class="discountPrice"> 1 Ticket × 5 <br> 50% OFF</div>
+                    <img src="film9.jpg" alt="film" class="img1">
+                    <div class="cardDetails">
+                        <p class="topic1"><span class="spantop2">Carol</span></p>
+                        <p class="date">📅 23rd February, 2025</p>
+                        <div class="price">
+                            <p>
+                                <span class="NormalPrice">Rs.2000</span>
+                                <span class="AfterDiscoumt">Rs.1000</span>
+                            </p>
+                        </div>
+                            <button class="BokkingButton" onclick="film9()">Book now</button>
+                    </div>
+                </div>  
+            </div>    
+</div>                
+       
+
+<br><br><br><br><br> 
+
+ <footer>
+    <br><div class="firstRow1" ><span><a href="#" onclick="feedback()">ABOUT US</a></span></div>
+    <div class="firstRow2" ><span><a href="#" onclick="contactUs()">CONTACT US</a></span> </div>
+         <div class="firstRow3" ><span><a href="#" onclick="feedback()">FEEDBACK</a></span></div> 
+              <br><br> 
+    
+<div class="socialIcon"><a href="https://Facebook.com/" target="_blank">
+    <img src="fb.png" alt="fb"></a><a href="https://Gmail.com/" target="_blank">
+        <img src="mail.jpeg" alt="mail"></a><a href="https://web.whatsapp.com/" target="_blank">
+            <img src="whatsapp.png" alt="whatsapp"></a><a  href="https://YouTube.com/" target="_blank"><img src="youtube.png" alt="youtube"></a></div><br>
+
+
+    <span class="firstRow4">Copyright @ 2025 eBooking All Rights Reserved</span>
+</footer>
+ 
+
+<script src="docMovi.js"></script>
+
+</body>
+</html>
